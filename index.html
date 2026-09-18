@@ -164,9 +164,9 @@ p{line-height:1.6;margin:0 0 1em;}
 .close-sidebar{background:none;border:0;font-size:22px;color:var(--red);float:right;}
 
 /* hero */
-.hero{position:relative;background:#111;overflow:hidden;}
+.hero{position:relative;background:#111;overflow:hidden;height:100vh;min-height:460px;max-height:760px;}
 .hero amp-video{display:block;}
-.hero-overlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.35) 35%,#fff 88%);padding:70px 0 90px;text-align:center;}
+.hero-overlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.35) 35%,#fff 88%);padding:60px 0 30px;text-align:center;}
 .country-banner{background:linear-gradient(90deg,rgba(255,0,49,0) 10%,var(--red) 52%,rgba(255,0,49,0) 100%);padding:10px 20px;margin-bottom:24px;}
 .country-banner p{font-weight:700;color:#fff;font-size:1.15rem;margin:0;}
 .country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
@@ -283,7 +283,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
 <main id="content">
 
   <section class="hero" aria-label="Intro video">
-    <amp-video width="1920" height="1080" layout="responsive" autoplay muted loop playsinline poster="assets/images/300322-EUBet-We-are-Now-EU9-Banner_Twitter.webp">
+    <amp-video layout="fill" object-fit="cover" autoplay muted loop playsinline poster="assets/images/300322-EUBet-We-are-Now-EU9-Banner_Twitter.webp">
       <source src="assets/video/eu9-asia-intro-video.mp4" type="video/mp4">
       <div fallback>Your browser doesn't support HTML5 video.</div>
     </amp-video>
