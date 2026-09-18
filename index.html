@@ -167,12 +167,13 @@ p{line-height:1.6;margin:0 0 1em;}
 .hero{position:relative;background:#111;overflow:hidden;height:100vh;min-height:460px;}
 .hero amp-video{display:block;}
 .hero::after{content:"";width:100%;height:50%;background:linear-gradient(360deg,#fff 20%,rgba(255,255,255,0.82) 50%,rgba(249,249,249,0) 100%);bottom:0;z-index:5;position:absolute;display:block;}
-.hero-overlay{position:absolute;left:0;right:0;bottom:0;z-index:6;padding:60px 0 30px;text-align:center;}
-.country-banner{background:linear-gradient(90deg,rgba(255,0,49,0) 10%,var(--red) 52%,rgba(255,0,49,0) 100%);padding:10px 20px;margin-bottom:24px;}
+.hero-overlay{position:absolute;left:0;right:0;bottom:0;z-index:6;padding:60px 0 60px;text-align:center;}
+.country-banner{background:linear-gradient(90deg,rgba(255,0,49,0) 10%,var(--red) 52%,rgba(255,0,49,0) 100%);padding:10px 20px;margin:0 auto 24px;max-width:700px;}
 .country-banner p{font-weight:700;color:#fff;font-size:1.15rem;margin:0;}
-.country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:50px;}
 .country-item{display:flex;flex-direction:column;align-items:center;width:130px;}
-.country-item amp-img{border-radius:50%;box-shadow:0 3px 10px rgba(0,0,0,.25);}
+.country-item .flag-circle{width:100px;height:100px;border-radius:50%;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.25);background:#fff;display:flex;align-items:center;justify-content:center;}
+.country-item .flag-circle amp-img{display:block;}
 .country-item span{margin-top:8px;font-size:16px;font-weight:500;color:var(--ink);}
 
 /* generic sections */
@@ -293,23 +294,23 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
         <div class="country-banner"><p>EU9 Worldwide – Select Your Country</p></div>
         <div class="country-grid">
           <a class="country-item" href="https://komputertajirmelintir.com/register/referer/718b9e37f7">
-            <amp-img src="assets/images/indonesia-1.webp" width="100" height="100" layout="fixed" alt="Indonesia"></amp-img>
+            <div class="flag-circle"><amp-img src="assets/images/indonesia-1.webp" width="70" height="100" layout="fixed" object-fit="cover" alt="Indonesia"></amp-img></div>
             <span>Indonesia</span>
           </a>
           <a class="country-item" href="https://eu9myhuat.com/register/9f28937edd">
-            <amp-img src="assets/images/malaysia-1.webp" width="100" height="100" layout="fixed" alt="Malaysia"></amp-img>
+            <div class="flag-circle"><amp-img src="assets/images/malaysia-1.webp" width="70" height="100" layout="fixed" object-fit="cover" alt="Malaysia"></amp-img></div>
             <span>Malaysia</span>
           </a>
           <a class="country-item" href="https://euppheng.com/register/referer/2be4999c39">
-            <amp-img src="assets/images/singapore.webp" width="100" height="100" layout="fixed" alt="Singapore"></amp-img>
+            <div class="flag-circle"><amp-img src="assets/images/singapore.webp" width="70" height="100" layout="fixed" object-fit="cover" alt="Singapore"></amp-img></div>
             <span>Singapore</span>
           </a>
           <a class="country-item" href="https://eu9-vn.in.net/register/referer/9a986ec2cb">
-            <amp-img src="assets/images/vietnam-1.webp" width="100" height="100" layout="fixed" alt="Vietnam"></amp-img>
+            <div class="flag-circle"><amp-img src="assets/images/vietnam-1.webp" width="70" height="100" layout="fixed" object-fit="cover" alt="Vietnam"></amp-img></div>
             <span>Vietnam</span>
           </a>
           <a class="country-item" href="https://eu9kh.com/">
-            <amp-img src="assets/images/cambodia-1.webp" width="100" height="100" layout="fixed" alt="Cambodia"></amp-img>
+            <div class="flag-circle"><amp-img src="assets/images/cambodia-1.webp" width="70" height="100" layout="fixed" object-fit="cover" alt="Cambodia"></amp-img></div>
             <span>Cambodia</span>
           </a>
         </div>
