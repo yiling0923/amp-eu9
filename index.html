@@ -184,8 +184,10 @@ p{line-height:1.6;margin:0 0 1em;}
 /* games grid */
 .games-section{position:relative;width:100%;background-image:url('assets/images/Eu9-Background-Right-v.png');background-repeat:no-repeat;background-position:center right;background-size:cover;}
 .games-section-grid{display:flex;flex-direction:column;gap:32px;align-items:center;}
-@media (min-width:900px){.games-section-grid{flex-direction:row;align-items:flex-start;}}
-.games-text{text-align:left;flex:1 1 0;}
+@media (min-width:900px){.games-section-grid{flex-direction:row;align-items:flex-start;}
+  .games-visual{width:auto;flex:0 0 420px;}
+}
+.games-text{text-align:left;flex:1 1 320px;min-width:0;}
 .games-list{display:flex;flex-direction:column;gap:22px;margin-top:24px;}
 .game-card{display:flex;align-items:flex-start;gap:16px;}
 .game-card amp-img{flex:0 0 auto;}
