@@ -183,8 +183,6 @@ p{line-height:1.6;margin:0 0 1em;}
 /* generic sections */
 section{padding:48px 0;}
 .section-alt{background:var(--bg);}
-.section-dark{background:#161513;color:#eee;}
-.section-dark h2{color:#fff;}
 .center{text-align:center;}
 
 /* games grid */
@@ -200,14 +198,13 @@ section{padding:48px 0;}
 amp-carousel.mobile-carousel{border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2);}
 
 /* features grid */
-.features-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-top:28px;}
+.features-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px;text-align:left;}
 @media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);}}
-@media (min-width:1025px){.features-grid{grid-template-columns:repeat(4,1fr);}}
-.feature-card{display:flex;align-items:flex-start;gap:14px;background:#fff;border-radius:10px;padding:18px;}
-.feature-card h3{font-size:1rem;letter-spacing:.5px;}
+.feature-card{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #ffd6de;border-radius:12px;padding:18px 20px;}
+.feature-icon-badge{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;}
+.feature-icon-badge amp-img{display:block;}
+.feature-card h3{font-size:.95rem;letter-spacing:.5px;margin-bottom:4px;}
 .feature-card p{font-size:13px;color:var(--muted);margin:0;}
-.section-dark .feature-card{background:#221f1c;}
-.section-dark .feature-card p{color:#bbb;}
 
 /* apps */
 .apps-row{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin:28px 0;}
@@ -367,24 +364,24 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
     </div>
   </section>
 
-  <section class="section-dark">
+  <section>
     <div class="container center">
       <h2>EU9 Features</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <amp-img src="assets/images/eu9_feature_01.webp" width="80" height="80" layout="fixed" alt="Fast"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_01.webp" width="34" height="34" layout="fixed" alt="Fast"></amp-img></div>
           <div><h3>FAST</h3><p>The site is highly speed-optimized for a smooth gaming experience, with the fastest 60-second withdrawal time.</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/eu9_feature_02.webp" width="80" height="80" layout="fixed" alt="Secure"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_02.webp" width="34" height="34" layout="fixed" alt="Secure"></amp-img></div>
           <div><h3>SECURE</h3><p>EU9 is PAGCOR and Gaming Curacao licensed, ensuring a completely safe and secure gaming experience for all players!</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/eu9_feature_03.webp" width="80" height="80" layout="fixed" alt="Convenient"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_03.webp" width="34" height="34" layout="fixed" alt="Convenient"></amp-img></div>
           <div><h3>CONVENIENT</h3><p>EU9 offers a variety of payment methods, including bank transfer, e-wallet, and cryptocurrency.</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/eu9_feature_04.webp" width="80" height="80" layout="fixed" alt="Professional"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_04.webp" width="34" height="34" layout="fixed" alt="Professional"></amp-img></div>
           <div><h3>PROFESSIONAL</h3><p>Asia's official agent for major gambling brands. 24/7 member support for troubleshooting and assistance.</p></div>
         </div>
       </div>
@@ -462,19 +459,19 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
       <h2>Try EU9 Telegram Casino - Asia's first telegram casino</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <amp-img src="assets/images/Speed_White.png" width="80" height="80" layout="fixed" alt="Instant access"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/Speed_White.png" width="34" height="34" layout="fixed" alt="Instant access"></amp-img></div>
           <div><h3>INSTANT ACCESS, ANYTIME, ANYWHERE</h3><p>Enjoy instant gaming gratification with just a few taps on your Telegram app — no lengthy downloads or cumbersome logins.</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/Security_White.png" width="80" height="80" layout="fixed" alt="Privacy and security"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/Security_White.png" width="34" height="34" layout="fixed" alt="Privacy and security"></amp-img></div>
           <div><h3>PRIVACY AND SECURITY</h3><p>State-of-the-art security measures protect your privacy and transactions. Play confidently knowing your privacy is safeguarded.</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/Diversity_White.png" width="80" height="80" layout="fixed" alt="Diverse game selection"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/Diversity_White.png" width="34" height="34" layout="fixed" alt="Diverse game selection"></amp-img></div>
           <div><h3>DIVERSE GAME SELECTION</h3><p>From classic Blackjack and Roulette to cutting-edge slots and arcade games, EU9 Telegram Casino has something for every taste.</p></div>
         </div>
         <div class="feature-card">
-          <amp-img src="assets/images/ExclusivePromotion_White.png" width="80" height="80" layout="fixed" alt="Exclusive promotions"></amp-img>
+          <div class="feature-icon-badge"><amp-img src="assets/images/ExclusivePromotion_White.png" width="34" height="34" layout="fixed" alt="Exclusive promotions"></amp-img></div>
           <div><h3>EXCLUSIVE PROMOTIONS</h3><p>Unparalleled excitement with exclusive bonuses, free credits, and more. Join now and seize the opportunity to win big.</p></div>
         </div>
       </div>
