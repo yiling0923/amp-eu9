@@ -260,7 +260,7 @@ p{line-height:1.6;margin:0 0 1em;}
 @media (min-width:600px){.gallery-grid{grid-template-columns:repeat(5,1fr);}}
 .gallery-cell{background:#fff;border-radius:8px;padding:14px;display:flex;align-items:center;justify-content:center;}
 .trust-right .gallery-grid{margin-top:0;gap:14px;}
-.trust-right .gallery-cell{background:#141414;border-radius:8px;padding:8px 12px;min-height:76px;}
+.trust-right .gallery-cell{background:#141414;border-radius:8px;padding:8px 12px;min-height:76px;position:relative;overflow:hidden;display:block;}
 
 /* flip / stream cards */
 .stream-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px;}
@@ -459,25 +459,25 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
         </div>
         <div class="trust-right">
           <div class="gallery-grid">
-            <div class="gallery-cell"><amp-img src="assets/images/evo.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Evolution Gaming"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/endorphina.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Endorphina"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/dreamgame.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Dream Game"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/cmd.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="CMD368"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/awc_spadegaming.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Spadegaming"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/sexy_baccarat.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Sexy Baccarat"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/simpleplay.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="SimplePlay"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/nextspin.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="NextSpin"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/mega888.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Mega888"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/m8sport.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="M8BET"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/ezugi.webp" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Ezugi"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/yeebet.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="YB Live"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/sexy_baccarat.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Sexy Baccarat"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/playtech.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Playtech"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/mega888.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Mega888"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/king855.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="King855"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/joker.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Joker"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/jili.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="Jili"></amp-img></div>
-            <div class="gallery-cell"><amp-img src="assets/images/fachai.png" width="auto" height="60" layout="fixed-height" object-fit="contain" alt="FA CHAI"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/evo.webp" layout="fill" object-fit="contain" alt="Evolution Gaming"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/endorphina.webp" layout="fill" object-fit="contain" alt="Endorphina"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/dreamgame.png" layout="fill" object-fit="contain" alt="Dream Game"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/cmd.webp" layout="fill" object-fit="contain" alt="CMD368"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/awc_spadegaming.webp" layout="fill" object-fit="contain" alt="Spadegaming"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/sexy_baccarat.png" layout="fill" object-fit="contain" alt="Sexy Baccarat"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/simpleplay.webp" layout="fill" object-fit="contain" alt="SimplePlay"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/nextspin.webp" layout="fill" object-fit="contain" alt="NextSpin"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/mega888.png" layout="fill" object-fit="contain" alt="Mega888"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/m8sport.webp" layout="fill" object-fit="contain" alt="M8BET"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/ezugi.webp" layout="fill" object-fit="contain" alt="Ezugi"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/yeebet.png" layout="fill" object-fit="contain" alt="YB Live"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/sexy_baccarat.png" layout="fill" object-fit="contain" alt="Sexy Baccarat"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/playtech.png" layout="fill" object-fit="contain" alt="Playtech"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/mega888.png" layout="fill" object-fit="contain" alt="Mega888"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/king855.png" layout="fill" object-fit="contain" alt="King855"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/joker.png" layout="fill" object-fit="contain" alt="Joker"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/jili.png" layout="fill" object-fit="contain" alt="Jili"></amp-img></div>
+            <div class="gallery-cell"><amp-img src="assets/images/fachai.png" layout="fill" object-fit="contain" alt="FA CHAI"></amp-img></div>
           </div>
         </div>
       </div>
