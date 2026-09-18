@@ -223,10 +223,12 @@ amp-carousel.mobile-carousel{border-radius:24px;overflow:hidden;box-shadow:0 10p
 @media (min-width:768px){.stream-grid{grid-template-columns:1fr 1fr;}}
 .stream-card{position:relative;border:3px solid var(--red);border-radius:16px;overflow:hidden;}
 .stream-card amp-img{display:block;}
-.stream-card.placeholder{background:linear-gradient(135deg,#1a1a1a,#2c2c2c);padding:34px 24px;text-align:center;color:#fff;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.stream-card.placeholder .brand{font-weight:800;font-size:1.4rem;letter-spacing:1px;margin-bottom:18px;}
-.stream-card.placeholder .brand span{color:var(--red);}
-.stream-card.placeholder p{font-weight:700;letter-spacing:.5px;}
+.stream-card.photo-card{position:relative;}
+.stream-card.photo-card amp-img{filter:brightness(.55);}
+.stream-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;}
+.stream-overlay .brand{font-weight:800;font-size:1.4rem;letter-spacing:1px;margin-bottom:18px;}
+.stream-overlay .brand span{color:var(--red);}
+.stream-overlay p{font-weight:700;letter-spacing:.5px;}
 .stream-card .btn{margin-top:14px;}
 
 /* about */
@@ -428,10 +430,13 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
         <div class="stream-card">
           <amp-img src="assets/images/eu9-sport-card.png" width="798" height="706" layout="responsive" alt="EU9 Sport — watch your game live, stream now"></amp-img>
         </div>
-        <div class="stream-card placeholder">
-          <div class="brand">EU9 <span>TV</span></div>
-          <p>WATCH YOUR GAME IN LIVE</p>
-          <a class="btn" href="#">STREAM NOW</a>
+        <div class="stream-card photo-card">
+          <amp-img src="assets/images/eu9-tv-card.png" width="798" height="590" layout="responsive" alt="EU9 TV"></amp-img>
+          <div class="stream-overlay">
+            <div class="brand">EU9 <span>TV</span></div>
+            <p>WATCH YOUR GAME IN LIVE</p>
+            <a class="btn" href="#">STREAM NOW</a>
+          </div>
         </div>
       </div>
     </div>
