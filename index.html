@@ -151,30 +151,24 @@ p{line-height:1.6;margin:0 0 1em;}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:50;background:#292421;}
-.header-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:1200px;margin:0 auto;}
-.brand amp-img{display:block;}
-.menu-toggle{background:none;border:0;color:#fff;font-size:28px;line-height:1;padding:4px 8px;}
-.desktop-nav{display:none;}
-.desktop-nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;}
-.desktop-nav a{color:#fff;font-weight:700;font-size:15px;}
-.desktop-nav a:hover{color:var(--red);}
+.site-header{position:sticky;top:0;z-index:50;background:#1b1918;}
+.header-bar{position:relative;display:flex;align-items:center;justify-content:center;padding:12px 20px;min-height:46px;}
+.brand{display:block;}
+.brand amp-img{display:block;margin:0 auto;}
+.menu-toggle{position:absolute;top:50%;right:16px;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:26px;line-height:1;padding:4px 8px;}
 .sidebar-nav{background:#fff;width:280px;padding:24px;}
 .sidebar-nav ul{list-style:none;margin:0;padding:0;}
 .sidebar-nav li{border-bottom:1px solid #eee;}
 .sidebar-nav a{display:block;padding:14px 4px;color:var(--ink-2);font-weight:700;}
 .sidebar-nav .country-flag{width:22px;height:22px;vertical-align:middle;margin-right:8px;border-radius:50%;}
 .close-sidebar{background:none;border:0;font-size:22px;color:var(--red);float:right;}
-@media (min-width:922px){
-  .menu-toggle{display:none;}
-  .desktop-nav{display:block;}
-}
 
 /* hero */
 .hero{position:relative;background:#111;overflow:hidden;}
 .hero amp-video{display:block;}
-.hero-overlay{position:relative;background:linear-gradient(180deg,rgba(0,0,0,.15),#fff 92%);padding:40px 0 20px;text-align:center;}
-.hero-overlay p{font-weight:700;color:var(--ink);font-size:1.1rem;margin-bottom:18px;}
+.hero-overlay{position:relative;background:linear-gradient(180deg,rgba(0,0,0,0),#fff 92%);padding:40px 0 20px;text-align:center;}
+.country-banner{background:linear-gradient(90deg,rgba(255,0,49,0) 10%,var(--red) 52%,rgba(255,0,49,0) 100%);padding:8px 20px;margin-bottom:18px;}
+.country-banner p{font-weight:700;color:#fff;font-size:1.05rem;margin:0;}
 .country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;}
 .country-item{display:flex;flex-direction:column;align-items:center;width:96px;}
 .country-item amp-img{border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.15);}
@@ -263,18 +257,10 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
 
 <header class="site-header">
   <div class="header-bar">
-    <button class="menu-toggle" on="tap:sidebar1.toggle" aria-label="Menu">&#9776;</button>
     <a class="brand" href="https://eu9.asia/" aria-label="EU9 Home">
       <amp-img src="assets/images/eu9-logo.svg" width="100" height="40" layout="fixed" alt="EU9 logo"></amp-img>
     </a>
-    <nav class="desktop-nav" aria-label="Primary">
-      <ul>
-        <li><a href="https://eu9.asia/">Home</a></li>
-        <li><a href="https://eu9.asia/blog/">Blog</a></li>
-        <li><a href="https://eu9.asia/contact-us/">Contact Us</a></li>
-        <li><a href="https://eu9.asia/online-slot-malaysia/">Online Slot</a></li>
-      </ul>
-    </nav>
+    <button class="menu-toggle" on="tap:sidebar1.toggle" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
@@ -304,7 +290,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
     </amp-video>
     <div class="hero-overlay">
       <div class="container">
-        <p>EU9 Worldwide – Select Your Country</p>
+        <div class="country-banner"><p>EU9 Worldwide – Select Your Country</p></div>
         <div class="country-grid">
           <a class="country-item" href="https://komputertajirmelintir.com/register/referer/718b9e37f7">
             <amp-img src="assets/images/indonesia-1.webp" width="64" height="64" layout="fixed" alt="Indonesia"></amp-img>
