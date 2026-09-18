@@ -191,10 +191,17 @@ p{line-height:1.6;margin:0 0 1em;}
 .game-card amp-img{flex:0 0 auto;}
 .game-card h3{font-size:1.05rem;margin-bottom:4px;}
 .game-card p{font-size:14px;margin:0;color:var(--muted);}
-.games-visual{flex:0 0 auto;display:flex;justify-content:center;}
+.games-visual{flex:0 0 auto;display:flex;justify-content:center;width:100%;}
+.phone-demo{position:relative;width:100%;max-width:480px;aspect-ratio:964/906;}
+.phone-demo .demo-layer{position:absolute;top:0;left:0;width:100%;height:100%;}
+.phone-demo .demo-el1{z-index:1;}
+.phone-demo .phone-screen-slot{position:absolute;top:2.6%;left:27.5%;width:41%;height:87%;overflow:hidden;border-radius:8%/4%;z-index:2;}
+.phone-demo .phone-screen-slot amp-carousel{width:100%;height:100%;}
+.phone-demo .demo-frame{z-index:3;}
+.phone-demo .demo-el2{z-index:4;}
+.phone-demo .mobile-btn{position:absolute;left:48%;bottom:6%;transform:translateX(-50%);z-index:10;}
 
 /* mobile demo carousel */
-amp-carousel.mobile-carousel{border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2);}
 
 /* features grid */
 .features-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px;text-align:left;}
@@ -349,12 +356,20 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
         </div>
 
         <div class="games-visual">
-          <amp-carousel class="mobile-carousel" width="270" height="480" layout="fixed" type="slides" autoplay delay="3000" loop>
-            <amp-img src="assets/images/game-slide-1.png" width="270" height="480" layout="fixed" alt="Live Casino game preview"></amp-img>
-            <amp-img src="assets/images/game-slide-2.png" width="270" height="480" layout="fixed" alt="Live slot game preview"></amp-img>
-            <amp-img src="assets/images/game-slide-3.png" width="270" height="480" layout="fixed" alt="Sportsbook betting preview"></amp-img>
-            <amp-img src="assets/images/game-slide-4.png" width="270" height="480" layout="fixed" alt="Fishing game preview"></amp-img>
-          </amp-carousel>
+          <div class="phone-demo">
+            <amp-img class="demo-layer demo-el1" src="assets/images/mobile-element-1.png" layout="fill" alt=""></amp-img>
+            <div class="phone-screen-slot">
+              <amp-carousel class="mobile-carousel" layout="fill" type="slides" autoplay delay="3000" loop>
+                <amp-img src="assets/images/game-slide-1.png" layout="fill" object-fit="cover" alt="Live Casino game preview"></amp-img>
+                <amp-img src="assets/images/game-slide-2.png" layout="fill" object-fit="cover" alt="Live slot game preview"></amp-img>
+                <amp-img src="assets/images/game-slide-3.png" layout="fill" object-fit="cover" alt="Sportsbook betting preview"></amp-img>
+                <amp-img src="assets/images/game-slide-4.png" layout="fill" object-fit="cover" alt="Fishing game preview"></amp-img>
+              </amp-carousel>
+            </div>
+            <amp-img class="demo-layer demo-frame" src="assets/images/mobile.png" layout="fill" alt="EU9 mobile app"></amp-img>
+            <amp-img class="demo-layer demo-el2" src="assets/images/mobile-element-2.png" layout="fill" alt=""></amp-img>
+            <div class="mobile-btn"><a class="btn" href="#">Get Started</a></div>
+          </div>
         </div>
       </div>
     </div>
