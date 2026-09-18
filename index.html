@@ -222,13 +222,15 @@ p{line-height:1.6;margin:0 0 1em;}
 /* features grid */
 .features-section{position:relative;width:100%;display:flex;justify-content:center;align-items:center;padding:0;margin:48px 0;background-image:url('assets/images/Eu9-Background-Right-v.png');background-repeat:no-repeat;background-position:bottom left;background-size:45% auto;}
 .features-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none;gap:20px 0px;margin-top:28px;text-align:left;justify-items:center;align-items:center;padding:0;}
-@media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:0px 50px;row-gap:0px;column-gap:50px;}}
+@media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);grid-auto-flow:row;gap:0px 50px;row-gap:0px;column-gap:50px;justify-items:center;align-items:center;margin:0;padding:0;}}
 .feature-card{display:flex;align-items:center;gap:16px;background:var(--bg);border:1px solid var(--red);border-radius:12px;padding:18px 20px;width:100%;}
 .feature-icon-badge{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;}
 .feature-icon-badge amp-img{display:block;}
-.features-section .feature-card{position:relative;height:100%;min-height:100%;padding:24px;margin:0px;display:block;}
-.features-section .feature-card>div:last-child{margin-left:44px;}
-.features-section .feature-icon-badge{position:absolute;width:90px;height:90px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;top:-50%;left:-45px;transform:translate(0px,-50%);}
+.features-section .container{max-width:100%;}
+.features-section .feature-card{position:relative;height:100%;min-height:100%;background-color:#F3F5F6;margin:0;padding:0;border-style:solid;border-width:2px;border-color:#FF0031;border-radius:10px;display:block;}
+.features-section .feature-card>div:last-child{padding:28px 24px 24px 64px;}
+.features-section .feature-icon-badge{position:static;width:auto;height:auto;background:none;border-radius:0;display:block;}
+.features-section .feature-icon-badge amp-img{position:absolute;display:block;top:-50%;left:-45px;transform:translate(0px,-50%);}
 .feature-card h3{font-size:.95rem;letter-spacing:.5px;margin-bottom:4px;}
 .feature-card p{font-size:13px;color:var(--muted);margin:0;}
 
@@ -404,19 +406,19 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
       <h2>EU9 Features</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_01.webp" width="40" height="40" layout="fixed" object-fit="contain" alt="Fast"></amp-img></div>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_01.webp" width="90" height="90" layout="fixed" object-fit="contain" alt="Fast"></amp-img></div>
           <div><h3>FAST</h3><p>The site is highly speed-optimized for a smooth gaming experience, with the fastest 60-second withdrawal time.</p></div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_02.webp" width="40" height="40" layout="fixed" object-fit="contain" alt="Secure"></amp-img></div>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_02.webp" width="90" height="90" layout="fixed" object-fit="contain" alt="Secure"></amp-img></div>
           <div><h3>SECURE</h3><p>EU9 is PAGCOR and Gaming Curacao licensed, ensuring a completely safe and secure gaming experience for all players!</p></div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_03.webp" width="40" height="40" layout="fixed" object-fit="contain" alt="Convenient"></amp-img></div>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_03.webp" width="90" height="90" layout="fixed" object-fit="contain" alt="Convenient"></amp-img></div>
           <div><h3>CONVENIENT</h3><p>EU9 offers a variety of payment methods, including bank transfer, e-wallet, and cryptocurrency.</p></div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_04.webp" width="40" height="40" layout="fixed" object-fit="contain" alt="Professional"></amp-img></div>
+          <div class="feature-icon-badge"><amp-img src="assets/images/eu9_feature_04.webp" width="90" height="90" layout="fixed" object-fit="contain" alt="Professional"></amp-img></div>
           <div><h3>PROFESSIONAL</h3><p>Asia's official agent for major gambling brands. 24/7 member support for troubleshooting and assistance.</p></div>
         </div>
       </div>
