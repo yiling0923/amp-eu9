@@ -220,9 +220,10 @@ p{line-height:1.6;margin:0 0 1em;}
 /* mobile demo carousel */
 
 /* features grid */
-.features-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px;text-align:left;}
-@media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);}}
-.feature-card{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #ffd6de;border-radius:12px;padding:18px 20px;}
+.features-section{position:relative;width:100%;display:flex;justify-content:center;align-items:center;padding:0;background-image:url('assets/images/Eu9-Background-Right-v.png');background-repeat:no-repeat;background-position:bottom left;background-size:45% auto;}
+.features-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none;gap:20px 0px;margin-top:28px;text-align:left;justify-items:center;align-items:center;padding:0;}
+@media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:0px 50px;row-gap:0px;column-gap:50px;}}
+.feature-card{display:flex;align-items:center;gap:16px;background:var(--bg);border:1px solid var(--red);border-radius:12px;padding:18px 20px;width:100%;}
 .feature-icon-badge{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;}
 .feature-icon-badge amp-img{display:block;}
 .feature-card h3{font-size:.95rem;letter-spacing:.5px;margin-bottom:4px;}
@@ -395,7 +396,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
     <amp-img class="sponsor-banner-img" src="assets/images/sponsor-page-angelapuiyi-banner.webp" width="auto" height="564" layout="fixed-height" object-fit="contain" object-position="center center" alt="EU9 sponsorship banner"></amp-img>
   </section>
 
-  <section>
+  <section class="features-section">
     <div class="container center">
       <h2>EU9 Features</h2>
       <div class="features-grid">
