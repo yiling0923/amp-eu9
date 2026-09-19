@@ -285,9 +285,11 @@ p{line-height:1.6;margin:0 0 1em;}
 .watch-card:hover .watch-back{opacity:1;}
 .watch-back amp-img{display:block;}
 .watch-overlay{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;}
-.watch-overlay p{font-weight:700;letter-spacing:.5px;margin-bottom:14px;}
-.watch-overlay .btn{background:#fff;color:var(--red);}
+.watch-overlay p{font-weight:700;letter-spacing:.5px;margin-bottom:14px;text-transform:uppercase;font-size:1.1rem;}
+.watch-overlay .btn{background:#fff;color:var(--red);display:inline-flex;align-items:center;gap:10px;}
 .watch-overlay .btn:hover{background:#f2f2f2;}
+.watch-overlay .play-icon{display:inline-flex;color:var(--red);}
+.watch-overlay .play-icon svg{display:block;}
 
 /* about */
 .about-text ul{padding-left:20px;margin:0 0 1em;}
@@ -515,7 +517,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
             <amp-img src="assets/images/eu9-sport-hover-e1667546915924-300x263.jpg" layout="fill" object-fit="cover" alt="EU9 Sport — watch your game live, stream now"></amp-img>
             <div class="watch-overlay">
               <p>WATCH YOUR GAME IN LIVE</p>
-              <a class="btn" href="#">STREAM NOW</a>
+              <a class="btn watch-stream-btn" href="#">STREAM NOW<span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="currentColor"></circle><polygon points="10,7 18,12 10,17" fill="#fff"></polygon></svg></span></a>
             </div>
           </div>
         </div>
@@ -527,7 +529,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
             <amp-img src="assets/images/eu9-tv-hover-e1667547110361-300x263.jpg" layout="fill" object-fit="cover" alt="EU9 TV — watch your show live, stream now"></amp-img>
             <div class="watch-overlay">
               <p>WATCH YOUR SHOW IN LIVE</p>
-              <a class="btn" href="#">STREAM NOW</a>
+              <a class="btn watch-stream-btn" href="#">STREAM NOW<span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="12" fill="currentColor"></circle><polygon points="10,7 18,12 10,17" fill="#fff"></polygon></svg></span></a>
             </div>
           </div>
         </div>
