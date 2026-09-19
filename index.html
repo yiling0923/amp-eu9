@@ -270,6 +270,8 @@ p{line-height:1.6;margin:0 0 1em;}
 .trust-section .container{max-width:80%;}
 .hologram-section{position:relative;width:100%;background-image:url('assets/images/Eu9-Background-Right.png');background-repeat:no-repeat;background-position:bottom 15% right;background-size:62% auto;}
 .hologram-section .container{max-width:80%;margin:0 auto;padding:0;}
+.hologram-frame{position:relative;width:100%;padding-top:33.87%;overflow:hidden;}
+.hologram-frame amp-img{position:absolute;inset:0;}
 
 /* watch section: flip-hover cards */
 .watch-section{position:relative;width:100%;background-image:url('assets/images/Eu9-Background-Left.png');background-repeat:no-repeat;background-position:center left;background-size:45% auto;}
@@ -503,7 +505,9 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
 
   <section class="hologram-section">
     <div class="container">
-      <amp-img src="assets/images/eu9_apps.webp" width="1919" height="650" layout="responsive" object-fit="cover" object-position="center bottom" alt="EU9 apps showcase"></amp-img>
+      <div class="hologram-frame">
+        <amp-img src="assets/images/eu9_apps.webp" layout="fill" object-fit="cover" object-position="center bottom" alt="EU9 apps showcase"></amp-img>
+      </div>
     </div>
   </section>
 
