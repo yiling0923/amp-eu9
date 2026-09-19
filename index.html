@@ -168,8 +168,9 @@ p{line-height:1.6;margin:0 0 1em;}
 .sidebar-nav ul{list-style:none;margin:0;padding:0;}
 .sidebar-nav li{border-bottom:1px solid #eee;}
 .sidebar-nav a{display:block;padding:14px 4px;color:var(--ink-2);font-weight:700;}
+.sidebar-nav a.active{color:var(--red);}
 .sidebar-nav a:hover{color:var(--red);}
-.sidebar-nav amp-accordion h4.country-toggle:hover{color:var(--red-dark);}
+.sidebar-nav amp-accordion h4.country-toggle:hover{color:var(--red);}
 .sidebar-nav .country-flag{width:22px;height:22px;vertical-align:middle;margin-right:8px;border-radius:50%;}
 amp-sidebar#sidebar1{width:280px;}
 .close-sidebar{position:absolute;top:0;left:0;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:2;}
@@ -177,9 +178,9 @@ amp-sidebar#sidebar1{width:280px;}
 .sidebar-nav li.country-menu-item{border-bottom:1px solid #eee;}
 .sidebar-nav .country-accordion{width:100%;}
 .sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
-.sidebar-nav amp-accordion h4.country-toggle{padding:14px 4px;font-size:16px;line-height:1;font-weight:700;color:var(--red);cursor:pointer;position:relative;background:none;border:none;margin:0;}
+.sidebar-nav amp-accordion h4.country-toggle{padding:14px 4px;font-size:16px;line-height:1;font-weight:700;color:var(--ink-2);cursor:pointer;position:relative;background:none;border:none;margin:0;}
 .sidebar-nav amp-accordion h4.country-toggle::before{content:none;}
-.sidebar-nav .country-toggle::after{content:"";display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid var(--red);position:absolute;right:-16px;top:50%;transform:translateY(-50%);}
+.sidebar-nav .country-toggle::after{content:"";display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid var(--ink-2);position:absolute;right:-16px;top:50%;transform:translateY(-50%);}
 .sidebar-nav .country-toggle[aria-expanded="true"]::after{transform:translateY(-50%) rotate(180deg);}
 .sidebar-nav .country-list{list-style:none;margin:0;padding:0 0 8px;}
 .sidebar-nav .country-list li{border-bottom:none;}
@@ -398,7 +399,7 @@ footer .container{max-width:1629px;}
   <button class="close-sidebar" on="tap:sidebar1.toggle" aria-label="Close menu">&times;</button>
   <nav class="sidebar-nav" aria-label="Mobile">
     <ul>
-      <li><a href="https://eu9.asia/">Home</a></li>
+      <li><a class="active" href="https://eu9.asia/">Home</a></li>
       <li class="country-menu-item">
         <amp-accordion class="country-accordion">
           <section>
