@@ -170,6 +170,17 @@ p{line-height:1.6;margin:0 0 1em;}
 .sidebar-nav a{display:block;padding:14px 4px;color:var(--ink-2);font-weight:700;}
 .sidebar-nav .country-flag{width:22px;height:22px;vertical-align:middle;margin-right:8px;border-radius:50%;}
 .close-sidebar{background:none;border:0;font-size:22px;color:var(--red);float:right;}
+.sidebar-nav li.country-item{border-bottom:1px solid #eee;}
+.sidebar-nav .country-accordion{width:100%;}
+.sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
+.sidebar-nav amp-accordion h4.country-toggle{padding:14px 4px;font-size:16px;line-height:1;font-weight:700;color:var(--red);cursor:pointer;position:relative;background:none;border:none;margin:0;}
+.sidebar-nav amp-accordion h4.country-toggle::before{content:none;}
+.sidebar-nav .country-toggle::after{content:"";display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid var(--red);position:absolute;right:4px;top:50%;transform:translateY(-50%);}
+.sidebar-nav .country-toggle[aria-expanded="true"]::after{transform:translateY(-50%) rotate(180deg);}
+.sidebar-nav .country-list{list-style:none;margin:0;padding:0 0 8px;}
+.sidebar-nav .country-list li{border-bottom:none;}
+.sidebar-nav .country-list a{display:flex;align-items:center;gap:10px;padding:8px 4px 8px 8px;color:var(--ink-2);font-weight:600;}
+.sidebar-nav .country-list .country-flag{margin-right:0;}
 
 /* hero */
 .hero{position:relative;background:#111;overflow:hidden;height:100vh;min-height:460px;}
@@ -384,11 +395,20 @@ footer .container{max-width:1629px;}
   <nav class="sidebar-nav" aria-label="Mobile">
     <ul>
       <li><a href="https://eu9.asia/">Home</a></li>
-      <li><a href="https://komputertajirmelintir.com/register/referer/718b9e37f7"><amp-img class="country-flag" src="assets/images/indonesia-1.webp" width="22" height="22" layout="fixed" alt="Indonesia flag"></amp-img>Indonesia</a></li>
-      <li><a href="https://eu9myhuat.com/register/9f28937edd"><amp-img class="country-flag" src="assets/images/malaysia-1.webp" width="22" height="22" layout="fixed" alt="Malaysia flag"></amp-img>Malaysia</a></li>
-      <li><a href="https://euppheng.com/register/referer/2be4999c39"><amp-img class="country-flag" src="assets/images/singapore.webp" width="22" height="22" layout="fixed" alt="Singapore flag"></amp-img>Singapore</a></li>
-      <li><a href="https://eu9-vn.in.net/register/referer/9a986ec2cb"><amp-img class="country-flag" src="assets/images/vietnam-1.webp" width="22" height="22" layout="fixed" alt="Vietnam flag"></amp-img>Vietnam</a></li>
-      <li><a href="https://eu9kh.com/"><amp-img class="country-flag" src="assets/images/cambodia-1.webp" width="22" height="22" layout="fixed" alt="Cambodia flag"></amp-img>Cambodia</a></li>
+      <li class="country-item">
+        <amp-accordion class="country-accordion">
+          <section>
+            <h4 class="country-toggle">Country</h4>
+            <ul class="country-list">
+              <li><a href="https://komputertajirmelintir.com/register/referer/718b9e37f7"><amp-img class="country-flag" src="assets/images/indonesia-1.webp" width="22" height="22" layout="fixed" alt="Indonesia flag"></amp-img>Indonesia</a></li>
+              <li><a href="https://eu9myhuat.com/register/9f28937edd"><amp-img class="country-flag" src="assets/images/malaysia-1.webp" width="22" height="22" layout="fixed" alt="Malaysia flag"></amp-img>Malaysia</a></li>
+              <li><a href="https://euppheng.com/register/referer/2be4999c39"><amp-img class="country-flag" src="assets/images/singapore.webp" width="22" height="22" layout="fixed" alt="Singapore flag"></amp-img>Singapore</a></li>
+              <li><a href="https://eu9-vn.in.net/register/referer/9a986ec2cb"><amp-img class="country-flag" src="assets/images/vietnam-1.webp" width="22" height="22" layout="fixed" alt="Vietnam flag"></amp-img>Vietnam</a></li>
+              <li><a href="https://eu9kh.com/"><amp-img class="country-flag" src="assets/images/cambodia-1.webp" width="22" height="22" layout="fixed" alt="Cambodia flag"></amp-img>Cambodia</a></li>
+            </ul>
+          </section>
+        </amp-accordion>
+      </li>
       <li><a href="https://eu9.asia/blog/">Blog</a></li>
       <li><a href="https://eu9.asia/contact-us/">Contact Us</a></li>
       <li><a href="https://eu9.asia/online-slot-malaysia/">Online Slot</a></li>
