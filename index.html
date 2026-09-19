@@ -171,8 +171,9 @@ p{line-height:1.6;margin:0 0 1em;}
 .sidebar-nav a:hover{color:var(--red);}
 .sidebar-nav amp-accordion h4.country-toggle:hover{color:var(--red);}
 .sidebar-nav .country-flag{width:35px;height:35px;vertical-align:middle;margin-right:8px;border-radius:50%;box-shadow:0px 4px 7px rgba(0,0,0,0.3);}
-amp-sidebar#sidebar1{width:315px;background:#fff;overflow-x:visible;}
-.close-sidebar{position:absolute;top:14px;left:-15px;width:29px;height:29px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:35px;line-height:1;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:5;}
+amp-sidebar#sidebar1{width:315px;background:#fff;}
+.close-sidebar{display:none;position:fixed;top:14px;left:calc(100vw - 330px);width:29px;height:29px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:35px;line-height:1;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:2147483647;}
+amp-sidebar#sidebar1[open]~.close-sidebar{display:flex;}
 .close-sidebar:hover{background:var(--red-dark);}
 .sidebar-nav .country-accordion{width:100%;}
 .sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
@@ -395,7 +396,6 @@ footer .container{max-width:1629px;}
 </header>
 
 <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
-  <button class="close-sidebar" on="tap:sidebar1.toggle" aria-label="Close menu">&times;</button>
   <nav class="sidebar-nav" aria-label="Mobile">
     <ul>
       <li><a class="active" href="https://eu9.asia/">Home</a></li>
@@ -419,6 +419,7 @@ footer .container{max-width:1629px;}
     </ul>
   </nav>
 </amp-sidebar>
+<button class="close-sidebar" on="tap:sidebar1.toggle" aria-label="Close menu">&times;</button>
 
 <main id="content">
 
