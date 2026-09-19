@@ -169,7 +169,9 @@ p{line-height:1.6;margin:0 0 1em;}
 .sidebar-nav li{border-bottom:1px solid #eee;}
 .sidebar-nav a{display:block;padding:14px 4px;color:var(--ink-2);font-weight:700;}
 .sidebar-nav .country-flag{width:22px;height:22px;vertical-align:middle;margin-right:8px;border-radius:50%;}
-.close-sidebar{background:none;border:0;font-size:22px;color:var(--red);float:right;}
+amp-sidebar#sidebar1{width:280px;}
+.close-sidebar{position:absolute;top:0;left:0;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:2;}
+.close-sidebar:hover{background:var(--red-dark);}
 .sidebar-nav li.country-menu-item{border-bottom:1px solid #eee;}
 .sidebar-nav .country-accordion{width:100%;}
 .sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
