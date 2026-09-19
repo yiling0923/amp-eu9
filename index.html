@@ -114,6 +114,14 @@
             "@type": "Answer",
             "text": "Yes, your information is secure at EU9 Casino. We use advanced encryption technology to protect your data and ensure it remains confidential. Additionally, we follow strict security protocols to safeguard your financial transactions."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the RTP (Return to Player) rate for EU9?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, your information is secure at EU9 Casino. We use advanced encryption technology to protect your data and ensure it remains confidential. Additionally, we follow strict security protocols to safeguard your financial transactions."
+          }
         }
       ]
     },
@@ -317,10 +325,13 @@ p{line-height:1.6;margin:0 0 1em;}
 .about-section .container{max-width:100%;padding-right:224px;padding-top:65px;padding-left:190px;}
 
 /* faq / amp-accordion */
-amp-accordion section{border-bottom:1px solid #e5e7eb;padding:0;}
-amp-accordion h4{margin:0;padding:16px 4px;font-size:1.05rem;cursor:pointer;}
-amp-accordion .faq-body{padding:0 4px 16px;}
-amp-accordion .faq-body p{margin:0;color:var(--muted);font-size:14px;}
+.faq-section h2{font-size:32px;line-height:41.6px;font-weight:600;}
+amp-accordion section{border-style:solid;border-width:2px;border-color:#D5D8DC;border-radius:0.625rem;padding:0;margin-bottom:16px;}
+amp-accordion h4{margin:0;padding:16px 20px 16px 44px;font-size:20px;line-height:20px;font-weight:500;color:#1f2124;cursor:pointer;position:relative;}
+amp-accordion h4::before{content:"+";position:absolute;left:20px;top:50%;transform:translateY(-50%);font-weight:700;}
+amp-accordion h4[aria-expanded="true"]::before{content:"\2212";}
+amp-accordion .faq-body{padding:1.25rem;}
+amp-accordion .faq-body p{margin:0;color:#212529;font-size:16px;line-height:24px;font-weight:400;}
 
 /* footer */
 footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:14px;color:var(--muted);}
@@ -603,28 +614,32 @@ footer{background:#fff;border-top:1px solid #eee;padding:44px 0 20px;font-size:1
     </div>
   </section>
 
-  <section class="section-alt">
+  <section class="section-alt faq-section">
     <div class="container">
       <h2 class="center">Frequently Asked Questions</h2>
       <amp-accordion>
         <section>
-          <h4>How do I create an account at EU9 Casino?</h4>
-          <div class="faq-body"><p>To create an account at EU9, simply visit our website and click on the "Sign Up" or "Register" button. Follow the easy steps to provide your information, including a valid email address and password. Once you've completed the registration process, you can start playing.</p></div>
+          <h4>How do I create an account at EU9 Casino ?</h4>
+          <div class="faq-body"><p>To create an account at EU9, simply visit our website and click on the &ldquo;Sign Up&rdquo; or &ldquo;Register&rdquo; button. Follow the easy steps to provide your information, including a valid email address and password. Once you&rsquo;ve completed the registration process, you can start playing.</p></div>
         </section>
         <section>
-          <h4>What types of games are available at EU9?</h4>
+          <h4>What types of games are available at EU9 ?</h4>
           <div class="faq-body"><p>EU9 Casino offers a wide variety of games, including slot machines, table games like blackjack and roulette, as well as live dealer games. We also have options for sports betting and other exciting gaming experiences to suit different preferences.</p></div>
         </section>
         <section>
-          <h4>Are there any bonuses or promotions for players at EU9 Casino?</h4>
+          <h4>Are there any bonuses or promotions for players at EU9 Casino ?</h4>
           <div class="faq-body"><p>Yes, we frequently offer bonuses and promotions to our players. These can include welcome bonuses for new players, free spins, cashback offers, and loyalty rewards for our regular players. Keep an eye on our promotions page for the latest offers and terms.</p></div>
         </section>
         <section>
-          <h4>How can I deposit and withdraw money from my account?</h4>
+          <h4>How can I deposit and withdraw money from my account ?</h4>
           <div class="faq-body"><p>We offer multiple payment methods for both depositing and withdrawing funds, including credit/debit cards, e-wallets, bank transfers, and more. You can choose the option that works best for you within our secure cashier section.</p></div>
         </section>
         <section>
-          <h4>Is my personal and financial information secure at EU9 Casino?</h4>
+          <h4>Is my personal and financial information secure at EU9 Casino ?</h4>
+          <div class="faq-body"><p>Yes, your information is secure at EU9 Casino. We use advanced encryption technology to protect your data and ensure it remains confidential. Additionally, we follow strict security protocols to safeguard your financial transactions.</p></div>
+        </section>
+        <section>
+          <h4>What is the RTP (Return to Player) rate for EU9?</h4>
           <div class="faq-body"><p>Yes, your information is secure at EU9 Casino. We use advanced encryption technology to protect your data and ensure it remains confidential. Additionally, we follow strict security protocols to safeguard your financial transactions.</p></div>
         </section>
       </amp-accordion>
