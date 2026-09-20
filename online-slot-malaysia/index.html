@@ -167,7 +167,8 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* faq / amp-accordion */
 .faq-section .container{max-width:100%;}
-amp-accordion section{border-style:solid;border-width:2px;border-color:#D5D8DC;border-radius:0.625rem;padding:0;margin-bottom:10px;}
+amp-accordion section{border-style:solid;border-width:1px;border-color:#D5D8DC;border-radius:0.625rem;padding:0;margin-bottom:10px;overflow:hidden;min-height:3.625rem;}
+.faq-section h2{font-size:32px;line-height:41.6px;font-weight:600;text-align:left;}
 amp-accordion h4{padding:16px 9px 16px 36px;font-size:20px;line-height:20px;font-weight:500;color:#1f2124;cursor:pointer;position:relative;background:none;}
 amp-accordion h4.i-amphtml-accordion-header{background-color:transparent;border:none;}
 amp-accordion h4::before{content:"+";position:absolute;left:10px;top:50%;transform:translateY(-50%);font-weight:700;font-size:27px;}
@@ -449,7 +450,7 @@ footer .container{max-width:1629px;}
   <section class="page-section section-alt faq-section">
     <div class="container">
       <h2 class="center">Online Slot Malaysia FAQ</h2>
-      <amp-accordion expand-single-section>
+      <amp-accordion expand-single-section animate>
         <section expanded>
           <h4>What are online slots in Malaysia?</h4>
           <div class="faq-body"><p>Online slots are digital reel games accessed through a browser or supported app. They use symbols, paylines, ways or clusters under a paytable. Each round has an uncertain result.</p></div>
