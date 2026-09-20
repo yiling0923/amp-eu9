@@ -1,0 +1,396 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<title>Blog | EU9</title>
+<link rel="canonical" href="https://eu9.asia/blog/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<meta name="description" content="EU9 blog: online casino reviews, slot game tips, Telegram casino guides, promotions and player updates for Malaysia and Asia.">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog | EU9">
+<meta property="og:description" content="EU9 blog: online casino reviews, slot game tips, Telegram casino guides, promotions and player updates for Malaysia and Asia.">
+<meta property="og:url" content="https://eu9.asia/blog/">
+<meta property="og:site_name" content="EU9">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | EU9">
+<meta name="twitter:description" content="EU9 blog: online casino reviews, slot game tips, Telegram casino guides, promotions and player updates for Malaysia and Asia.">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/images/fav.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/images/fav.png">
+
+<style amp-custom>
+:root{--red:#FF0031;--red-dark:#C6072A;--ink:#1e293b;--ink-2:#334155;--muted:#505050;--bg:#F0F5FA;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:"Roboto",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,sans-serif;color:var(--ink-2);background:#fff;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0 0 .5em;font-weight:700;color:var(--ink);line-height:1.2;}
+h1{font-size:2rem;}
+h2{font-size:1.85rem;}
+h3{font-size:1.4rem;}
+p{line-height:1.6;margin:0 0 1em;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:#1b1918;}
+.header-bar{position:relative;display:flex;align-items:center;justify-content:center;padding:3px 20px;background-color:#292421;min-height:46px;}
+.brand{display:block;transform:translateX(-15px);}
+.brand amp-img{display:block;margin:0 auto;}
+.menu-toggle{position:absolute;top:50%;right:16px;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:26px;line-height:1;padding:4px 8px;}
+.sidebar-nav{background:#fff;width:315px;padding:31px;}
+.sidebar-nav ul{list-style:none;margin:0;padding:0;}
+.sidebar-nav a{display:block;padding:13px 13px;font-size:18px;font-weight:700;}
+.sidebar-nav a.active{color:var(--red);}
+.sidebar-nav a:hover{color:var(--red);}
+.sidebar-nav amp-accordion h4.country-toggle:hover{color:var(--red);}
+.sidebar-nav .country-flag{width:35px;height:35px;vertical-align:middle;margin-right:8px;border-radius:50%;box-shadow:0px 4px 7px rgba(0,0,0,0.3);}
+amp-sidebar#sidebar1{width:315px;background:#fff;}
+.close-sidebar{display:flex;opacity:0;visibility:hidden;pointer-events:none;position:fixed;top:30px;left:calc(100vw - 330px);width:29px;height:29px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:35px;line-height:1;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:2147483647;transition:none;}
+amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .1s ease .08s,visibility 0s linear .08s;}
+.sidebar-nav .country-accordion{width:100%;}
+.sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
+.sidebar-nav amp-accordion h4.country-toggle{padding:13px 13px;font-size:18px;line-height:1;font-weight:700;color:#000;cursor:pointer;position:relative;background:none;border:none;margin:0;}
+.sidebar-nav amp-accordion h4.country-toggle::before{content:none;}
+.sidebar-nav .country-toggle::after{content:"";display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid var(--ink-2);position:absolute;right:40px;top:50%;transform:translateY(-50%);}
+.sidebar-nav amp-accordion h4.country-toggle:hover::after{border-top-color:var(--red);}
+.sidebar-nav .country-toggle[aria-expanded="true"]::after{transform:translateY(-50%) rotate(180deg);}
+.sidebar-nav .country-list{list-style:none;margin:0;padding:0 0 8px;}
+.sidebar-nav .country-list li{border-bottom:none;}
+.sidebar-nav .country-list a{display:flex;align-items:center;gap:4px;padding:8px 4px 8px 15px;color:#434343;font-size:14px;font-weight:700;}
+.sidebar-nav .country-list a:hover{color:var(--red);}
+.sidebar-nav .country-list .country-flag{margin-right:0;}
+
+/* blog */
+.blog-section{padding:50px 0 70px;}
+.blog-heading-row{display:flex;align-items:center;gap:24px;justify-content:center;margin-bottom:40px;}
+.blog-heading-row .line{flex:1;max-width:260px;height:1px;background:#e0e0e0;}
+.blog-heading-row h2{margin:0;font-size:30px;font-weight:700;text-align:center;}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+@media (max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:600px){.blog-grid{grid-template-columns:1fr;}}
+.blog-card{display:flex;flex-direction:column;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);}
+.blog-thumb{position:relative;width:100%;padding-top:56.25%;background:#f0f0f0;overflow:hidden;}
+.blog-thumb amp-img{display:block;}
+.blog-category-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px;}
+.blog-card-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;}
+.blog-card-body .blog-category-badge.no-thumb{position:static;display:inline-block;margin-bottom:10px;align-self:flex-start;}
+.blog-card h3{font-size:18px;line-height:1.35;font-weight:700;margin:0 0 10px;}
+.blog-card h3 a:hover{color:var(--red);}
+.blog-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:rgba(63,63,63,.73);margin-bottom:12px;}
+.blog-meta span{display:inline-flex;align-items:center;gap:5px;}
+.blog-meta svg{width:13px;height:13px;flex:0 0 auto;fill:currentColor;}
+.blog-excerpt{font-size:14px;color:#555;margin-bottom:16px;flex:1;}
+.blog-readmore{text-align:right;}
+.blog-readmore a{display:inline-block;background:#e20707;border:2px solid #e20707;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:5px;transition:all .3s ease;}
+.blog-readmore a:hover{background:var(--red-dark);border-color:var(--red-dark);transform:scale(1.05);}
+
+.blog-pagination{display:flex;justify-content:center;gap:10px;margin-top:50px;}
+.blog-pagination a,.blog-pagination span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 8px;border-radius:4px;border:2px solid var(--red);color:var(--red);font-weight:600;font-size:14px;}
+.blog-pagination span.current{background:var(--red);color:#fff;}
+.blog-pagination a:hover{background:var(--red);color:#fff;}
+
+/* footer */
+footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
+footer .container{max-width:1629px;}
+.footer-top{display:flex;flex-wrap:wrap;gap:130px;}
+.footer-brand{display:flex;align-items:center;gap:20px;max-width:750px;}
+.footer-brand amp-img{flex:0 0 auto;}
+.footer-brand p{flex:1 1 auto;margin:0;}
+.footer-brand p{font-family:"Roboto",sans-serif;font-size:14px;font-weight:400;color:#505050;}
+.footer-brand p strong{color:#FF0031;font-weight:700;}
+.footer-col h4{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:10px;}
+.footer-grid .footer-col h4{font-size:18px;line-height:27px;color:#505050;font-weight:700;text-transform:none;letter-spacing:normal;}
+.footer-top .footer-col h4{font-size:14px;line-height:24px;color:#212529;font-weight:700;text-transform:none;letter-spacing:normal;margin-bottom:0;}
+.footer-top .social-row{gap:0;}
+.social-row,.badge-row{display:flex;flex-wrap:wrap;gap:10px;}
+.social-btn{width:30px;height:52px;padding-top:5px;border-radius:50%;border:none;background:none;display:flex;color:#c9ccd1;}
+.footer-top .footer-col:nth-child(3){margin-left:100px;}
+@media (max-width:900px){.footer-top .footer-col:nth-child(3){margin-left:0;}}
+.social-btn svg{width:26px;height:26px;display:block;}
+.social-btn:hover{color:var(--red-dark);}
+.footer-logos{display:flex;flex-wrap:nowrap;gap:8px;align-items:center;}
+.footer-grid .footer-col:first-child .footer-logos amp-img:first-child{position:relative;top:-4px;}
+.footer-logos amp-img{object-fit:contain;flex:0 0 auto;}
+.footer-grid{display:flex;flex-wrap:wrap;column-gap:140px;row-gap:20px;align-items:center;margin:17px 0 0;border-top:1px solid #DADADA;padding-top:10px;}
+.footer-grid .footer-col:nth-child(4){margin-left:50px;}
+@media (max-width:900px){.footer-grid .footer-col:nth-child(4){margin-left:0;}}
+.footer-grid .footer-col h4{margin-bottom:4px;}
+.footer-grid .footer-col{flex:0 0 auto;}
+.copyright{border-top:1px solid #DADADA;margin-top:20px;padding-top:10px;text-align:left;color:#7a7a7a;font-size:16px;line-height:24px;font-weight:400;}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+<a class="visually-hidden" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand" href="../" aria-label="EU9 Home">
+      <amp-img src="../assets/images/eu9-logo.svg" width="100" height="50" layout="fixed" alt="EU9 logo"></amp-img>
+    </a>
+    <button class="menu-toggle" on="tap:sidebar1.toggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+  <nav class="sidebar-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li class="country-menu-item">
+        <amp-accordion class="country-accordion">
+          <section>
+            <h4 class="country-toggle">Country</h4>
+            <ul class="country-list">
+              <li><a href="https://komputertajirmelintir.com/register/referer/718b9e37f7"><amp-img class="country-flag" src="../assets/images/indonesia-1.webp" width="35" height="35" layout="fixed" alt="Indonesia flag"></amp-img>Indonesia</a></li>
+              <li><a href="https://eu9myhuat.com/register/9f28937edd"><amp-img class="country-flag" src="../assets/images/malaysia-1.webp" width="35" height="35" layout="fixed" alt="Malaysia flag"></amp-img>Malaysia</a></li>
+              <li><a href="https://euppheng.com/register/referer/2be4999c39"><amp-img class="country-flag" src="../assets/images/singapore.webp" width="35" height="35" layout="fixed" alt="Singapore flag"></amp-img>Singapore</a></li>
+              <li><a href="https://eu9-vn.in.net/register/referer/9a986ec2cb"><amp-img class="country-flag" src="../assets/images/vietnam-1.webp" width="35" height="35" layout="fixed" alt="Vietnam flag"></amp-img>Vietnam</a></li>
+              <li><a href="https://eu9kh.com/"><amp-img class="country-flag" src="../assets/images/cambodia-1.webp" width="35" height="35" layout="fixed" alt="Cambodia flag"></amp-img>Cambodia</a></li>
+            </ul>
+          </section>
+        </amp-accordion>
+      </li>
+      <li><a class="active" href="./">Blog</a></li>
+      <li><a href="../contact-us/">Contact Us</a></li>
+      <li><a href="../online-slot-malaysia/">Online Slot</a></li>
+    </ul>
+  </nav>
+</amp-sidebar>
+<button class="close-sidebar" on="tap:sidebar1.toggle" aria-label="Close menu">&times;</button>
+
+<main id="content">
+
+  <section class="blog-section">
+    <div class="container">
+      <div class="blog-heading-row"><span class="line"></span><h2>Blog</h2><span class="line"></span></div>
+
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <span class="blog-category-badge no-thumb">Casino Review</span>
+            <h3><a href="https://eu9.asia/casino-review/online-casino-games-telegram/">Why Do Players Like to Play Online Casino Games in Telegram?</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>April 12, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Casino Review</span>
+            </div>
+            <p class="blog-excerpt">Telegram, a popular messaging platform, has become a hub for various activities beyond just communication. One such activity gaining traction...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/casino-review/online-casino-games-telegram/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Online Slots Review</span>
+            <amp-img src="../assets/images/blog/Useful-Tips-to-Win-Slot-Games.jpg" layout="fill" object-fit="cover" alt="Useful Tips to Win Slot Games"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/slots-review/useful-tips-to-win-slot-games/">Useful Tips to Win Slot Games</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>January 17, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Online Slots Review</span>
+            </div>
+            <p class="blog-excerpt">Understanding Slot Game Mechanics Slot games, essential in both traditional and online casinos, operate on a simple mechanism. Players spin...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/slots-review/useful-tips-to-win-slot-games/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Online Slots Review</span>
+            <amp-img src="../assets/images/blog/spinning-the-reels-online-slots-deep-dive.jpg" layout="fill" object-fit="cover" alt="Unlocking the World of Online Slots: EU9 Asia and Beyond"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/slots-review/spinning-the-reels-online-slots-deep-dive/">Unlocking the World of Online Slots: EU9 Asia and Beyond</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>May 8, 2023</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Online Slots Review</span>
+            </div>
+            <p class="blog-excerpt">Online slots have taken the world of gambling by storm, offering a captivating and thrilling gaming experience that has attracted...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/slots-review/spinning-the-reels-online-slots-deep-dive/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Live Casino Review</span>
+            <amp-img src="../assets/images/blog/Understanding-the-Basics-of-Live-Roulette.jpg" layout="fill" object-fit="cover" alt="Understanding the Basics of Live Roulette"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/live-casino-review/understanding-the-basics-of-live-roulette/">Understanding the Basics of Live Roulette</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>February 8, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Live Casino Review</span>
+            </div>
+            <p class="blog-excerpt">Introduction to Live Roulette Live roulette is a popular game in the world of online casinos, especially across Asia, where...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/live-casino-review/understanding-the-basics-of-live-roulette/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Fishing</span>
+            <amp-img src="../assets/images/blog/Top-Tips-to-Win-Fishing-Games-Online.jpg" layout="fill" object-fit="cover" alt="Top Tips to Win Fishing Games Online"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/fishing/top-tips-to-win-fishing-games-online/">Top Tips to Win Fishing Games Online</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>January 18, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Fishing</span>
+            </div>
+            <p class="blog-excerpt">Fishing games have become a popular attraction in online casinos. These games mix engaging graphics with interactive gameplay, offering a...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/fishing/top-tips-to-win-fishing-games-online/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Casino Review</span>
+            <amp-img src="../assets/images/blog/Online_Gaming_Trends_Singapore_2024_3_950.webp" layout="fill" object-fit="cover" alt="Top Online Gaming Trends in Singapore 2024"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/casino-review/online-casino-trends-singapore/">Top Online Casino Trends in Singapore for 2024: Why EU9 Is Leading the Charge</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>February 26, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Casino Review</span>
+            </div>
+            <p class="blog-excerpt">In the ever-evolving landscape of online gaming, Singapore remains a vibrant hub where gaming trends swiftly take root and flourish...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/casino-review/online-casino-trends-singapore/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Casino Review</span>
+            <amp-img src="../assets/images/blog/Top-5-Payment-Methods-Accepted-at-EU9.png" layout="fill" object-fit="cover" alt="Top 5 Payment Methods Accepted at EU9"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/casino-review/top-5-payment-methods-accepted-at-eu9/">Top 5 Payment Methods Accepted at EU9</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>January 11, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Casino Review</span>
+            </div>
+            <p class="blog-excerpt">Most Popular Online Casino Payment Methods Online casinos typically offer a plethora of payment options, catering to every player&rsquo;s preference...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/casino-review/top-5-payment-methods-accepted-at-eu9/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">Live Casino Review</span>
+            <amp-img src="../assets/images/blog/Top-5-Best-Live-Casino-Game-Providers-in-2024.webp" layout="fill" object-fit="cover" alt="Top 5 Best Live Casino Game Providers 2024"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/live-casino-review/top-5-best-live-casino-game-providers-2024/">Top 5 Best Live Casino Game Providers 2024</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>February 7, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>Live Casino Review</span>
+            </div>
+            <p class="blog-excerpt">The online casino industry in Asia has seen remarkable growth, with live casino games being at the forefront of this...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/live-casino-review/top-5-best-live-casino-game-providers-2024/">Read More</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <span class="blog-category-badge">E-wallet Casino</span>
+            <amp-img src="../assets/images/blog/The-Rise-of-E-wallet-Casinos.jpg" layout="fill" object-fit="cover" alt="The Rise of E-wallet Casinos"></amp-img>
+          </div>
+          <div class="blog-card-body">
+            <h3><a href="https://eu9.asia/e-wallet-casino/the-rise-of-e-wallet-casinos/">The Rise of E-wallet Casinos</a></h3>
+            <div class="blog-meta">
+              <span><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"></path></svg>January 15, 2024</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"></path></svg>E-wallet Casino</span>
+            </div>
+            <p class="blog-excerpt">Introduction to E-wallet Casinos in Asia The online gambling sector in Asia has undergone a significant shift with the introduction...</p>
+            <div class="blog-readmore"><a href="https://eu9.asia/e-wallet-casino/the-rise-of-e-wallet-casinos/">Read More</a></div>
+          </div>
+        </article>
+
+      </div>
+
+      <nav class="blog-pagination" aria-label="Blog pagination">
+        <span class="current">1</span>
+        <a href="https://eu9.asia/blog/page/2/">2</a>
+        <a href="https://eu9.asia/blog/page/3/">3</a>
+      </nav>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <amp-img src="../assets/images/eu9-logo-black.webp" width="164" height="80" layout="fixed" alt="EU9 logo"></amp-img>
+        <p>Speed defines everything. In Speed, We Trust. The most Trusted and Fastest online gaming platform in Asia. Fast Cash In &amp; Out in 60s. <strong>#EU9RedCard #EU9 #EU9Asia</strong></p>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch With Us</h4>
+        <div class="social-row">
+          <a class="social-btn" href="https://api.whatsapp.com/" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73 0-1.3.68-1.94.92-2.2.24-.26.53-.32.71-.32h.5c.16 0 .38-.06.59.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.16 1.34.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.19.5.3.06.11.06.62-.16 1.24z"></path></svg></a>
+          <a class="social-btn" href="http://t.me/EU9MYR_bot" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.reddit.com/user/eu9asiamy" aria-label="Reddit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.2c0-1.1-.9-2-2-2-.5 0-1 .2-1.35.5-1.3-.87-3.05-1.43-5-1.5l.85-3.9 2.7.6c.02.85.72 1.5 1.55 1.5.85 0 1.55-.7 1.55-1.55S19.6 4 18.75 4c-.6 0-1.1.35-1.35.85l-3-.65c-.15-.03-.3.06-.33.2l-.95 4.35c-1.95.08-3.7.65-5 1.5-.35-.3-.85-.5-1.35-.5-1.1 0-2 .9-2 2 0 .8.5 1.5 1.2 1.8-.03.2-.05.4-.05.6 0 2.5 3 4.5 6.7 4.5s6.7-2 6.7-4.5c0-.2-.02-.4-.05-.6.7-.3 1.2-1 1.2-1.8zM8 13.5c0-.6.5-1 1-1s1 .4 1 1-.5 1-1 1-1-.4-1-1zm7.1 3.05c-.75.75-2 1.1-3.1 1.1s-2.35-.35-3.1-1.1c-.14-.14-.14-.36 0-.5.14-.14.36-.14.5 0 .6.6 1.6.9 2.6.9s2-.3 2.6-.9c.14-.14.36-.14.5 0 .14.14.14.36 0 .5zm-.1-2.05c-.5 0-1-.4-1-1s.5-1 1-1 1 .4 1 1-.5 1-1 1z"></path></svg></a>
+          <a class="social-btn" href="https://www.linkedin.com/in/eu9asiamy/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43c-1.14 0-2.07-.93-2.07-2.08 0-1.14.93-2.07 2.07-2.07 1.15 0 2.08.93 2.08 2.07 0 1.15-.93 2.08-2.08 2.08zm1.78 13.02H3.56V9h3.56v11.45z"></path></svg></a>
+          <a class="social-btn" href="https://twitter.com/eu9asiamy" aria-label="Twitter/X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.57L23 22h-6.9l-5.4-6.6L4.5 22H1.4l8.02-9.17L1 2h7.1l4.9 6.02L18.9 2zm-1.2 18.2h1.9L7.4 3.7H5.4l12.3 16.5z"></path></svg></a>
+          <a class="social-btn" href="https://www.youtube.com/@eu9asia/about" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 2.5 12 2.5 12 2.5h-.01s-4.9 0-8.2.34c-.46.05-1.46.06-2.36 1C.72 4.56.5 6.2.5 6.2S.27 8.12.27 10.04v1.8c0 1.92.23 3.84.23 3.84s.23 1.64.94 2.36c.9.94 2.08.9 2.6 1 1.9.18 8 .24 8 .24s4.9 0 8.2-.34c.46-.06 1.46-.07 2.36-1 .71-.72.94-2.36.94-2.36s.23-1.92.23-3.84v-1.8c0-1.92-.23-3.84-.23-3.84zM9.6 14.6V7.7l6.4 3.46-6.4 3.44z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Partner</h4>
+        <div class="footer-logos">
+          <amp-img src="../assets/images/pragmatic_play_logo.webp" width="90" height="45" layout="fixed" alt="Pragmatic Play"></amp-img>
+          <amp-img src="../assets/images/spadegaming_logo.webp" width="90" height="45" layout="fixed" alt="Spadegaming"></amp-img>
+          <amp-img src="../assets/images/qtech_logo.webp" width="70" height="35" layout="fixed" alt="Qtech"></amp-img>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Gaming License</h4>
+        <div class="footer-logos badge-row">
+          <amp-img src="../assets/images/SimpleLogo-1.png" width="100" height="32" layout="fixed" alt="Gaming Curacao license"></amp-img>
+          <amp-img src="../assets/images/Frame-1.png" width="60" height="19" layout="fixed" alt="BMM Testlabs"></amp-img>
+          <amp-img src="../assets/images/Pagcor_logo.png" width="84" height="19" layout="fixed" alt="PAGCOR"></amp-img>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Method</h4>
+        <div class="footer-logos badge-row">
+          <amp-img src="../assets/images/RHB.webp" width="56" height="28" layout="fixed" alt="RHB"></amp-img>
+          <amp-img src="../assets/images/Maybank.webp" width="70" height="35" layout="fixed" alt="Maybank"></amp-img>
+          <amp-img src="../assets/images/CIMB-2-1.webp" width="70" height="35" layout="fixed" alt="CIMB"></amp-img>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Partner</h4>
+        <div class="footer-logos">
+          <amp-img src="../assets/images/eu9_reponsible_18.webp" width="40" height="40" layout="fixed" alt="18+ responsible gaming"></amp-img>
+          <amp-img src="../assets/images/eu9_reponsible_aware.webp" width="40" height="40" layout="fixed" alt="Be aware, responsible gaming"></amp-img>
+          <amp-img src="../assets/images/eu9_reponsible_gamecare.webp" width="40" height="40" layout="fixed" alt="GameCare"></amp-img>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">COPYRIGHT © EU9. ALL RIGHTS RESERVED. | <a href="#">LLM Profile</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
