@@ -99,8 +99,9 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .contact-cards{display:flex;flex-direction:column;gap:24px;max-width:1270px;margin:0 auto;}
 .contact-box{background:#F3F5F6;border-radius:15px;box-shadow:0 5px 5px rgba(91,91,91,0.2);padding:30px;padding-top:25px;scroll-margin-top:100px;}
 .contact-box h3{font-weight:500;font-size:28px;line-height:33.5px;color:#212529;text-align:center;margin-bottom:20px;}
-.contact-channels{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;}
+.contact-channels{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:24px;}
 .contact-channels li{flex:0 0 auto;}
+@media (min-width:1024px){
 #malaysia .contact-channels{gap:270px;padding-right:35px;}
 #malaysia .contact-channels li:nth-child(3) a{margin-left:45px;}
 #singapore .contact-channels{gap:270px;padding-right:35px;}
@@ -114,6 +115,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 #indonesia .contact-channels{gap:115px;padding-right:0px;}
 #indonesia .contact-channels li:nth-child(4) a{margin-left:25px;}
 #indonesia .contact-channels li:nth-child(5) a{margin-left:29px;}
+}
 .contact-channels a{display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center;}
 .contact-channels a:hover{transform:translateY(-5px);}
 .contact-channels a:hover p{color:var(--red-dark);}
