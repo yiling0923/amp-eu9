@@ -271,6 +271,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 /* features grid */
 .features-section{position:relative;width:100%;display:flex;justify-content:center;align-items:center;padding:0;margin:48px 0;}
 .features-section::before{content:"";position:absolute;inset:0;z-index:-1;background-image:url('assets/images/Eu9-Background-Right.png');background-repeat:no-repeat;background-position:bottom left;background-size:100% auto;transform:scale(-1,-1);}
+@media (max-width:600px){.features-section::before{background-position:bottom 20% left;}}
 .features-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none;gap:20px 0px;margin-top:28px;text-align:left;justify-items:center;align-items:center;padding:0;}
 @media (min-width:768px){.features-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);grid-auto-flow:row;gap:45px 30px;row-gap:45px;column-gap:30px;justify-items:center;align-items:center;margin:0;padding:0;}}
 .feature-card{display:flex;align-items:center;gap:16px;background:var(--bg);border:1px solid var(--red);border-radius:12px;padding:18px 20px;width:100%;}
