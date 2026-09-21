@@ -195,7 +195,7 @@ amp-accordion .faq-body p{margin:0;color:#212529;font-size:16px;line-height:24px
 /* footer */
 footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
 .footer-top{display:flex;flex-wrap:wrap;gap:130px;}
-@media (max-width:600px){footer .container{padding:0px 15px;}.footer-top{gap:15px;}}
+@media (max-width:600px){footer .container{padding:0px 15px;}.footer-top{gap:15px;column-gap:50px;}.social-btn{padding-top:3px;}.footer-grid{margin:25px 0 0;padding-top:12px;}.footer-grid .footer-col:first-child .footer-logos amp-img:first-child{top:-5px;}}
 .footer-brand{align-items:center;gap:20px;max-width:750px;}
 .footer-brand amp-img{flex:0 0 auto;}
 .footer-brand p{flex:1 1 auto;margin:0;}
@@ -212,6 +212,10 @@ footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
 .footer-logos{display:flex;flex-wrap:nowrap;gap:8px;align-items:center;}
 .footer-grid .footer-col:first-child .footer-logos amp-img:first-child{position:relative;top:-4px;}
 .footer-logos amp-img{object-fit:contain;flex:0 0 auto;}
+.footer-badge{position:relative;flex:0 0 auto;}
+.footer-badge--bmm{width:60px;height:19px;}
+.footer-badge--pagcor{width:84px;height:19px;}
+@media (max-width:600px){.footer-badge--bmm{width:48px;height:15px;}.footer-badge--pagcor{width:73px;height:17px;}}
 .footer-grid{display:flex;flex-wrap:wrap;column-gap:140px;row-gap:20px;align-items:center;margin:17px 0 0;border-top:1px solid #DADADA;padding-top:10px;}
 .footer-grid .footer-col:nth-child(4){margin-left:50px;}
 .footer-grid .footer-col h4{margin-bottom:4px;}
@@ -579,8 +583,8 @@ footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
         <h4>Gaming License</h4>
         <div class="footer-logos badge-row">
           <amp-img src="../assets/images/SimpleLogo-1.png" width="100" height="32" layout="fixed" alt="Gaming Curacao license"></amp-img>
-          <amp-img src="../assets/images/Frame-1.png" width="60" height="19" layout="fixed" alt="BMM Testlabs"></amp-img>
-          <amp-img src="../assets/images/Pagcor_logo.png" width="84" height="19" layout="fixed" alt="PAGCOR"></amp-img>
+          <div class="footer-badge footer-badge--bmm"><amp-img src="../assets/images/Frame-1.png" layout="fill" object-fit="contain" alt="BMM Testlabs"></amp-img></div>
+          <div class="footer-badge footer-badge--pagcor"><amp-img src="../assets/images/Pagcor_logo.png" layout="fill" object-fit="contain" alt="PAGCOR"></amp-img></div>
         </div>
       </div>
       <div class="footer-col">
