@@ -88,9 +88,14 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .contact-flag-item{display:flex;flex-direction:column;align-items:center;width:110px;text-align:center;opacity:.9;}
 .contact-flag-item:hover{opacity:1;transform:translateY(-5px);}
 .contact-flag-item:hover span{color:#c6072a;}
-.contact-flag-item amp-img{border-radius:50%;}
+.contact-flag-circle{position:relative;width:65px;height:65px;border-radius:50%;overflow:hidden;}
 .contact-flag-item span{margin-top:10px;font-size:16px;color:#1a1a1a;}
-@media (max-width:600px){.contact-flags{gap:20px;}.contact-flag-item{width:70px;}.contact-flag-item span{font-size:14px;}}
+@media (max-width:600px){
+  .contact-flags{column-gap:37px;row-gap:2px;}
+  .contact-flag-item{width:70px;}
+  .contact-flag-circle{width:53px;height:53px;}
+  .contact-flag-item span{color:#505050;font-size:16px;line-height:24px;}
+}
 
 /* contact cards */
 .contact-cards-section{position:relative;padding:20px 0 60px;overflow:hidden;}
@@ -213,23 +218,23 @@ footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
     <div class="container">
       <div class="contact-flags">
         <a class="contact-flag-item" href="#malaysia">
-          <amp-img src="../assets/images/malaysia-1.webp" width="65" height="65" layout="fixed" object-fit="cover" alt="Malaysia"></amp-img>
+          <div class="contact-flag-circle"><amp-img src="../assets/images/malaysia-1.webp" layout="fill" object-fit="cover" alt="Malaysia"></amp-img></div>
           <span>Malaysia</span>
         </a>
         <a class="contact-flag-item" href="#singapore">
-          <amp-img src="../assets/images/singapore.webp" width="65" height="65" layout="fixed" object-fit="cover" alt="Singapore"></amp-img>
+          <div class="contact-flag-circle"><amp-img src="../assets/images/singapore.webp" layout="fill" object-fit="cover" alt="Singapore"></amp-img></div>
           <span>Singapore</span>
         </a>
         <a class="contact-flag-item" href="#vietnam">
-          <amp-img src="../assets/images/vietnam-1.webp" width="65" height="65" layout="fixed" object-fit="cover" alt="Vietnam"></amp-img>
+          <div class="contact-flag-circle"><amp-img src="../assets/images/vietnam-1.webp" layout="fill" object-fit="cover" alt="Vietnam"></amp-img></div>
           <span>Vietnam</span>
         </a>
         <a class="contact-flag-item" href="#thailand">
-          <amp-img src="../assets/images/thailand-1.webp" width="65" height="65" layout="fixed" object-fit="cover" alt="Thailand"></amp-img>
+          <div class="contact-flag-circle"><amp-img src="../assets/images/thailand-1.webp" layout="fill" object-fit="cover" alt="Thailand"></amp-img></div>
           <span>Thailand</span>
         </a>
         <a class="contact-flag-item" href="#indonesia">
-          <amp-img src="../assets/images/indonesia-1.webp" width="65" height="65" layout="fixed" object-fit="cover" alt="Indonesia"></amp-img>
+          <div class="contact-flag-circle"><amp-img src="../assets/images/indonesia-1.webp" layout="fill" object-fit="cover" alt="Indonesia"></amp-img></div>
           <span>Indonesia</span>
         </a>
       </div>
