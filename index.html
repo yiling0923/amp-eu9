@@ -201,7 +201,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 @media (max-width:600px){.country-banner p{line-height:1.4;}}
 .country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:60px;}
 .country-item{display:flex;flex-direction:column;align-items:center;width:130px;transition:transform .3s ease-in-out;}
-@media (max-width:600px){.country-grid{display:grid;grid-template-columns:repeat(3,1fr);justify-items:center;gap:24px;row-gap:3px;}.country-item{width:90px;}}
+@media (max-width:600px){.country-grid{display:grid;grid-template-columns:repeat(3,1fr);justify-items:center;gap:40px;row-gap:3px;}.country-item{width:90px;}}
 .country-item:hover{transform:scale(1.2);}
 .country-item .flag-circle{position:relative;width:105px;height:105px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 @media (max-width:600px){.country-item .flag-circle{width:70px;height:70px;}}
@@ -219,8 +219,11 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* games grid */
 .games-section{position:relative;width:100%;height:900px;background-image:url('assets/images/Eu9-Background-Right-v.png');background-repeat:no-repeat;background-position:bottom right;background-size:83% auto;}
+@media (max-width:600px){.games-section{height:auto;}}
 .games-section-grid{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:90px;padding:48px 0;height:100%;box-sizing:border-box;}
+@media (max-width:600px){.games-section-grid{padding:0;}}
 .games-text{text-align:left;flex:1 1 320px;min-width:0;width:100%;}
+@media (max-width:600px){.games-text{text-align:center;}}
 .games-text h1{font-size:40px;font-weight:600;line-height:1.4;margin-bottom:4px;}
 .games-text h2{font-size:32px;font-weight:600;line-height:1.3;}
 .games-list{display:flex;flex-direction:column;gap:26px;margin-top:24px;}
