@@ -26,6 +26,7 @@
 <meta name="twitter:image" content="https://yiling0923.github.io/amp-eu9/assets/images/Eu9-Background-Right.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 <link rel="icon" href="../assets/images/fav.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/images/fav.png">
 
@@ -116,15 +117,14 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .contact-channels a{display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform .3s ease;}
 .contact-channels a:hover{transform:translateY(-5px);}
 .contact-channels a:hover p{color:var(--red-dark);}
-.contact-channels a:hover .channel-icon svg{transform:scale(1.15);}
-.channel-icon{display:flex;align-items:center;justify-content:center;width:30px;height:30px;}
-.channel-icon svg{width:25px;height:25px;transition:transform .3s ease;display:block;}
+.contact-channels a:hover .channel-icon{transform:scale(1.15);}
+.channel-icon{font-size:25px;transition:transform .3s ease;}
 .contact-channels p{margin:0;font-size:16px;line-height:24px;color:#505050;word-break:break-word;}
-.channel-icon--whatsapp svg{fill:#25D366;}
-.channel-icon--email svg{fill:#E30613;}
-.channel-icon--telegram svg{fill:#229ED9;}
-.channel-icon--phone svg{fill:#E30613;}
-.channel-icon--line svg{fill:#06C755;}
+.channel-icon--whatsapp{color:#25D366;}
+.channel-icon--email{color:#E30613;}
+.channel-icon--telegram{color:#229ED9;}
+.channel-icon--phone{color:#E30613;}
+.channel-icon--line{color:#06C755;}
 @media (max-width:767px){
   .contact-channels{flex-direction:column;align-items:stretch;gap:14px;}
   .contact-channels li{max-width:none;}
@@ -242,50 +242,50 @@ footer{background:#fff;padding:60px 0 0;font-size:14px;color:var(--muted);}
         <div class="contact-box" id="malaysia">
           <h3>MALAYSIA</h3>
           <ul class="contact-channels">
-            <li><a href="mailto:officialeu9@gmail.com" aria-label="Email: officialeu9@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>officialeu9@gmail.com</p></a></li>
-            <li><a href="https://wa.me/601169188325" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +601169188325"><span class="channel-icon channel-icon--whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73 0-1.3.68-1.94.92-2.2.24-.26.53-.32.71-.32h.5c.16 0 .38-.06.59.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.16 1.34.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.19.5.3.06.11.06.62-.16 1.24z"></path></svg></span><p>+601169188325</p></a></li>
-            <li><a href="http://t.me/EU9MYR_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @EU9official"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@EU9official</p></a></li>
+            <li><a href="mailto:officialeu9@gmail.com" aria-label="Email: officialeu9@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>officialeu9@gmail.com</p></a></li>
+            <li><a href="https://wa.me/601169188325" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +601169188325"><i class="fab fa-whatsapp channel-icon channel-icon--whatsapp" aria-hidden="true"></i><p>+601169188325</p></a></li>
+            <li><a href="http://t.me/EU9MYR_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @EU9official"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@EU9official</p></a></li>
           </ul>
         </div>
 
         <div class="contact-box" id="singapore">
           <h3>SINGAPORE</h3>
           <ul class="contact-channels">
-            <li><a href="mailto:officialeu9@gmail.com" aria-label="Email: officialeu9@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>officialeu9@gmail.com</p></a></li>
-            <li><a href="https://wa.me/601161876700" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +601161876700"><span class="channel-icon channel-icon--whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73 0-1.3.68-1.94.92-2.2.24-.26.53-.32.71-.32h.5c.16 0 .38-.06.59.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.16 1.34.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.19.5.3.06.11.06.62-.16 1.24z"></path></svg></span><p>+601161876700</p></a></li>
-            <li><a href="http://t.me/eu9trust/977" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @EU9official"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@EU9official</p></a></li>
+            <li><a href="mailto:officialeu9@gmail.com" aria-label="Email: officialeu9@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>officialeu9@gmail.com</p></a></li>
+            <li><a href="https://wa.me/601161876700" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +601161876700"><i class="fab fa-whatsapp channel-icon channel-icon--whatsapp" aria-hidden="true"></i><p>+601161876700</p></a></li>
+            <li><a href="http://t.me/eu9trust/977" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @EU9official"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@EU9official</p></a></li>
           </ul>
         </div>
 
         <div class="contact-box" id="vietnam">
           <h3>VIETNAM</h3>
           <ul class="contact-channels">
-            <li><a href="https://t.me/EU9VND_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @CSEU9"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@CSEU9</p></a></li>
-            <li><a href="https://t.me/Gialinheu9" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @Gialinheu9"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@Gialinheu9</p></a></li>
-            <li><a href="tel:84782875540" aria-label="Phone: 84782875540"><span class="channel-icon channel-icon--phone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"></path></svg></span><p>84782875540</p></a></li>
-            <li><a href="mailto:cs.eu9vn@gmail.com" aria-label="Email: cs.eu9vn@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>cs.eu9vn@gmail.com</p></a></li>
-            <li><a href="mailto:khieunai.eu@gmail.com" aria-label="Email: khieunai.eu@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>khieunai.eu@gmail.com</p></a></li>
+            <li><a href="https://t.me/EU9VND_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @CSEU9"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@CSEU9</p></a></li>
+            <li><a href="https://t.me/Gialinheu9" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @Gialinheu9"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@Gialinheu9</p></a></li>
+            <li><a href="tel:84782875540" aria-label="Phone: 84782875540"><i class="fas fa-phone channel-icon channel-icon--phone" aria-hidden="true"></i><p>84782875540</p></a></li>
+            <li><a href="mailto:cs.eu9vn@gmail.com" aria-label="Email: cs.eu9vn@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>cs.eu9vn@gmail.com</p></a></li>
+            <li><a href="mailto:khieunai.eu@gmail.com" aria-label="Email: khieunai.eu@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>khieunai.eu@gmail.com</p></a></li>
           </ul>
         </div>
 
         <div class="contact-box" id="thailand">
           <h3>THAILAND</h3>
           <ul class="contact-channels">
-            <li><a href="https://line.me/R/ti/p/@eu9111" target="_blank" rel="noopener noreferrer" aria-label="Line: @eu9thb"><span class="channel-icon channel-icon--line" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.94 2 10.8c0 2.76 1.5 5.22 3.84 6.84-.17.86-.6 2.36-.69 2.72-.11.44.17.43.35.31.14-.1 2.24-1.52 3.15-2.14.76.11 1.55.17 2.35.17 5.52 0 10-3.94 10-8.9S17.52 2 12 2z"></path></svg></span><p>@eu9thb</p></a></li>
-            <li><a href="tel:0817458309" aria-label="Phone: 0817458309"><span class="channel-icon channel-icon--phone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"></path></svg></span><p>0817458309</p></a></li>
-            <li><a href="mailto:eubetthai@gmail.com" aria-label="Email: eubetthai@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>eubetthai@gmail.com</p></a></li>
-            <li><a href="http://t.me/eu_thb_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @eu9th"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@eu9th</p></a></li>
+            <li><a href="https://line.me/R/ti/p/@eu9111" target="_blank" rel="noopener noreferrer" aria-label="Line: @eu9thb"><i class="fab fa-line channel-icon channel-icon--line" aria-hidden="true"></i><p>@eu9thb</p></a></li>
+            <li><a href="tel:0817458309" aria-label="Phone: 0817458309"><i class="fas fa-phone channel-icon channel-icon--phone" aria-hidden="true"></i><p>0817458309</p></a></li>
+            <li><a href="mailto:eubetthai@gmail.com" aria-label="Email: eubetthai@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>eubetthai@gmail.com</p></a></li>
+            <li><a href="http://t.me/eu_thb_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @eu9th"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@eu9th</p></a></li>
           </ul>
         </div>
 
         <div class="contact-box" id="indonesia">
           <h3>INDONESIA</h3>
           <ul class="contact-channels">
-            <li><a href="tel:+6282372022197" aria-label="Phone: +6282372022197"><span class="channel-icon channel-icon--phone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"></path></svg></span><p>+6282372022197</p></a></li>
-            <li><a href="mailto:eu9idr@gmail.com" aria-label="Email: eu9idr@gmail.com"><span class="channel-icon channel-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16z"></path></svg></span><p>eu9idr@gmail.com</p></a></li>
-            <li><a href="https://wa.me/6282372022197" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +6282372022197"><span class="channel-icon channel-icon--whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.08L2 22l5.09-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73 0-1.3.68-1.94.92-2.2.24-.26.53-.32.71-.32h.5c.16 0 .38-.06.59.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.16 1.34.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.19.5.3.06.11.06.62-.16 1.24z"></path></svg></span><p>+6282372022197</p></a></li>
-            <li><a href="http://t.me/eu9rtpmw" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @eubetidr"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@eubetidr</p></a></li>
-            <li><a href="http://t.me/nontondisiniaja11" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @nontondisiniaja11"><span class="channel-icon channel-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.94 3.11c-.24-.2-.61-.24-1.04-.08L2.6 10.02c-.5.2-.5.5-.09.65l4.6 1.44 1.78 5.44c.16.5.3.7.6.7.22 0 .33-.1.48-.24l2.4-2.28 4.72 3.48c.4.28.7.14.8-.36l3.16-14.9c.13-.6-.08-.86-.4-1.14z"></path></svg></span><p>@nontondisiniaja11</p></a></li>
+            <li><a href="tel:+6282372022197" aria-label="Phone: +6282372022197"><i class="fas fa-phone channel-icon channel-icon--phone" aria-hidden="true"></i><p>+6282372022197</p></a></li>
+            <li><a href="mailto:eu9idr@gmail.com" aria-label="Email: eu9idr@gmail.com"><i class="fas fa-envelope channel-icon channel-icon--email" aria-hidden="true"></i><p>eu9idr@gmail.com</p></a></li>
+            <li><a href="https://wa.me/6282372022197" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +6282372022197"><i class="fab fa-whatsapp channel-icon channel-icon--whatsapp" aria-hidden="true"></i><p>+6282372022197</p></a></li>
+            <li><a href="http://t.me/eu9rtpmw" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @eubetidr"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@eubetidr</p></a></li>
+            <li><a href="http://t.me/nontondisiniaja11" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @nontondisiniaja11"><i class="fab fa-telegram channel-icon channel-icon--telegram" aria-hidden="true"></i><p>@nontondisiniaja11</p></a></li>
           </ul>
         </div>
 
