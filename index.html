@@ -320,6 +320,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 @media (max-width:600px){.trust-grid{display:block;}}
 @media (min-width:900px){.trust-grid{grid-template-columns:1fr 1fr;align-items:start;gap:60px;}}
 .trust-left h2{text-transform:uppercase;margin-bottom:0;color:#7a7a7a;font-weight:500;font-size:32px;line-height:38.4px;text-align:center;}
+@media (max-width:600px){.trust-left h2{text-align:left;}}
 @media (max-width:600px){.trust-left .apps-col{padding:10px 10px 10px 10px;}}
 .qr-img-wrap{position:relative;width:250px;height:250px;margin:0 auto;}
 @media (max-width:600px){.qr-img-wrap{width:170px;height:170px;}}
@@ -341,14 +342,19 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 @media (max-width:600px){.trust-right .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);justify-content:center;}}
 .trust-right .gallery-cell{background:#141414;padding:8px 12px;flex:0 0 calc((100% - 14px)/3);min-width:100px;min-height:60px;position:relative;overflow:hidden;display:block;border:none;border-radius:0;box-shadow:none;max-width:100%;}
 @media (min-width:600px){.trust-right .gallery-cell{flex-basis:calc((100% - 28px)/5);}}
+@media (max-width:600px){.trust-right .gallery-cell{padding:6px 8px;min-width:80px;min-height:46px;}.trust-right .gallery-cell:last-child{grid-column:2;}}
 .trust-section .container{max-width:80%;}
+@media (max-width:600px){.trust-section .container{max-width:100%;}}
 .hologram-section{position:relative;z-index:2;width:100%;background-image:url('assets/images/Eu9-Background-Right.png');background-repeat:no-repeat;background-position:bottom 15% right;background-size:60% auto;}
+@media (max-width:600px){.hologram-section{background-position:bottom -47% right;background-size:105% auto;}}
 .hologram-section .container{max-width:80%;margin:0 auto;padding:0;}
+@media (max-width:600px){.hologram-section .container{max-width:100%;}}
 .hologram-frame{position:relative;z-index:1;width:100%;padding-top:33.87%;overflow:visible;}
 .hologram-frame amp-img{position:absolute;inset:0;}
 
 /* watch section: flip-hover cards */
 .watch-section{position:relative;width:100%;background-image:url('assets/images/Eu9-Background-Left.png');background-repeat:no-repeat;background-position:center left;background-size:45% auto;}
+@media (max-width:600px){.watch-section{background-position:top 150% left;background-size:300% auto;}}
 .watch-grid{width:85.333%;margin:0 auto;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:40px 40px;row-gap:40px;column-gap:40px;padding:0;}
 .watch-card{flex:1 1 320px;position:relative;border:none;border-radius:5px;overflow:hidden;}
 .watch-section .container{max-width:100%;padding-top:60px;}
