@@ -317,6 +317,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* trust section: QR/app codes on the left, provider logo grid on the right */
 .trust-grid{display:grid;grid-template-columns:1fr;gap:40px;text-align:left;}
+@media (max-width:600px){.trust-grid{display:block;}}
 @media (min-width:900px){.trust-grid{grid-template-columns:1fr 1fr;align-items:start;gap:60px;}}
 .trust-left h2{text-transform:uppercase;margin-bottom:0;color:#7a7a7a;font-weight:500;font-size:32px;line-height:38.4px;text-align:center;}
 @media (max-width:600px){.trust-left .apps-col{padding:10px 10px 10px 10px;}}
