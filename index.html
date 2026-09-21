@@ -279,6 +279,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 @media (min-width:768px){
 .features-section .container{width:83.333%;max-width:83.333%;display:flex;flex-direction:column;align-items:flex-start;gap:40px;margin:0;padding:48px 0;}
 .features-section .container h2{text-align:left;margin:0;}
+@media (max-width:600px){.features-section .container h2{color:#000;}}
 .features-section .features-grid{width:100%;margin-top:0;}
 }
 .features-section .feature-card{position:relative;height:100%;min-height:100%;width:92%;background-color:#F3F5F6;margin:0;padding:0;border-style:solid;border-width:2px;border-color:#FF0031;border-radius:10px;display:block;}
@@ -307,6 +308,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* apps */
 .apps-row{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin:28px 0;}
+@media (max-width:600px){.apps-row{flex-wrap:nowrap;}}
 .apps-col{text-align:center;max-width:260px;}
 .apps-col amp-img{border-radius:14px;margin-bottom:12px;}
 .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;border-radius:100px;padding:12px 28px;font-size:14px;}
@@ -316,10 +318,14 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .trust-grid{display:grid;grid-template-columns:1fr;gap:40px;text-align:left;}
 @media (min-width:900px){.trust-grid{grid-template-columns:1fr 1fr;align-items:start;gap:60px;}}
 .trust-left h2{text-transform:uppercase;margin-bottom:0;color:#7a7a7a;font-weight:500;font-size:32px;line-height:38.4px;text-align:center;}
+@media (max-width:600px){.trust-left .apps-col{padding:10px 10px 10px 10px;}}
+.qr-img-wrap{position:relative;width:250px;height:250px;margin:0 auto;}
+@media (max-width:600px){.qr-img-wrap{width:170px;height:170px;}}
 .trust-right{padding-top:50px;}
 .trust-left .apps-row{margin:0;gap:90px;}
 .trust-left .apps-col{max-width:480px;}
 .trust-left .btn{width:calc(100% + 70px);margin-left:-94px;margin-right:-94px;padding:10px 59px;background-color:#FF0031;border-radius:105px;font-family:"Roboto",sans-serif;font-size:16px;font-weight:600;text-align:center;}
+@media (max-width:600px){.trust-left .btn{font-size:12px;}}
 .trust-left .btn:hover{background-color:var(--red-dark);}
 .trust-left .apps-col amp-img{margin-bottom:0;}
 .trust-left .apps-col{text-align:center;}
@@ -573,11 +579,11 @@ footer .container{max-width:1629px;}
           <h2>EU9 In Speed, <span style="color:#ff0031;">We Trust.</span></h2>
           <div class="apps-row">
             <div class="apps-col">
-              <amp-img src="assets/images/Group-7.jpg" width="250" height="250" layout="fixed" alt="EU9 Android app QR code"></amp-img>
+              <div class="qr-img-wrap"><amp-img src="assets/images/Group-7.jpg" layout="fill" object-fit="contain" alt="EU9 Android app QR code"></amp-img></div>
               <div><a class="btn" href="#">EU9 APP APK Available on ANDROID</a></div>
             </div>
             <div class="apps-col">
-              <amp-img src="assets/images/eu9_apps_ios.jpg" width="250" height="250" layout="fixed" alt="EU9 iOS app QR code"></amp-img>
+              <div class="qr-img-wrap"><amp-img src="assets/images/eu9_apps_ios.jpg" layout="fill" object-fit="contain" alt="EU9 iOS app QR code"></amp-img></div>
               <div><a class="btn" href="#">EU9 Download Available on IOS</a></div>
             </div>
           </div>
