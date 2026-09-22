@@ -193,6 +193,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 /* hero */
 .hero{position:relative;background:#111;overflow:hidden;height:97.5vh;min-height:460px;}
 @media (max-width:600px){.hero{height:77vh;}}
+@media (min-width:601px) and (max-width:1024px){.hero{height:65vh;min-height:420px;}}
 .hero amp-video{display:block;}
 .hero::after{content:"";width:100%;height:50%;background:linear-gradient(360deg,#fff 20%,rgba(255,255,255,0.82) 50%,rgba(249,249,249,0) 100%);bottom:0;z-index:5;position:absolute;display:block;}
 .hero-overlay{position:absolute;left:0;right:0;bottom:0;z-index:6;padding:60px 0 63px;text-align:center;}
@@ -204,9 +205,11 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .country-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:60px;}
 .country-item{display:flex;flex-direction:column;align-items:center;width:130px;transition:transform .3s ease-in-out;}
 @media (max-width:600px){.country-grid{display:grid;grid-template-columns:repeat(3,1fr);justify-items:center;gap:40px;row-gap:3px;}.country-item{width:90px;}}
+@media (min-width:601px) and (max-width:1024px){.country-grid{gap:28px;}.country-item{width:100px;}}
 .country-item:hover{transform:scale(1.2);}
 .country-item .flag-circle{position:relative;width:110px;height:110px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 @media (max-width:600px){.country-item .flag-circle{width:70px;height:70px;}}
+@media (min-width:601px) and (max-width:1024px){.country-item .flag-circle{width:90px;height:90px;}}
 .country-item .flag-circle amp-img{display:block;}
 .country-item span{margin-top:4px;font-size:16px;font-weight:500;color:#343a40;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;}
 @media (max-width:600px){.country-item span{margin-top:3px;}}
@@ -253,6 +256,13 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
   .games-section-grid{flex-direction:row;align-items:center;}
   .games-text{width:auto;}
   .games-visual{flex:0 0 940px;width:auto;justify-content:flex-end;margin-right:-70px;}
+}
+@media (min-width:601px) and (max-width:899px){
+  .games-section{height:auto;background-size:70% auto;}
+  .games-section-grid{gap:40px;padding:40px 0;}
+  .games-text{text-align:center;}
+  .games-text h1,.games-text h2{margin-bottom:0;}
+  .phone-demo{max-width:520px;margin:0 auto;}
 }
 .phone-demo{position:relative;width:100%;max-width:910px;aspect-ratio:964/906;}
 .phone-demo .demo-layer{position:absolute;top:0;left:0;width:100%;height:100%;}
@@ -333,7 +343,8 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 /* trust section: QR/app codes on the left, provider logo grid on the right */
 .trust-grid{display:grid;grid-template-columns:1fr;gap:40px;text-align:left;}
 @media (max-width:600px){.trust-grid{display:block;}}
-@media (min-width:900px){.trust-grid{grid-template-columns:1fr 1fr;align-items:start;gap:60px;}}
+@media (min-width:768px){.trust-grid{grid-template-columns:1fr 1fr;align-items:start;gap:40px;}}
+@media (min-width:1025px){.trust-grid{gap:60px;}}
 .trust-left h2{text-transform:uppercase;margin-bottom:0;color:#7a7a7a;font-weight:500;font-size:32px;line-height:38.4px;text-align:center;}
 @media (max-width:600px){.trust-left h2{text-align:left;}}
 @media (max-width:600px){.trust-left .apps-col{padding:10px 10px 10px 10px;}}
@@ -411,6 +422,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 /* faq / amp-accordion */
 .faq-section{background:none;}
 .faq-section .container{width:100%;max-width:100%;padding-left:190px;padding-right:190px;padding-top:20px;}
+@media (max-width:1024px){.faq-section .container{padding-left:40px;padding-right:40px;}}
 @media (max-width:600px){.faq-section .container{padding:0 30px;}}
 .faq-section h2{font-size:32px;line-height:41.6px;font-weight:600;text-align:left;}
 amp-accordion section{border-style:solid;border-width:2px;border-color:#D5D8DC;border-radius:0.625rem;padding:0;margin-bottom:10px;}
