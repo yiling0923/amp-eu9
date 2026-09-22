@@ -146,7 +146,7 @@ footer .container{max-width:1629px;}
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
-<div id="page-top"></div>
+
 <amp-animation id="showScrollTopAnim" layout="nodisplay">
 <script type="application/json">
 {"duration":"200ms","fill":"both","animations":[{"selector":"#ast-scroll-top","keyframes":[{"opacity":"1","visibility":"visible"}]}]}
@@ -157,7 +157,9 @@ footer .container{max-width:1629px;}
 {"duration":"200ms","fill":"both","animations":[{"selector":"#ast-scroll-top","keyframes":[{"opacity":"0","visibility":"hidden"}]}]}
 </script>
 </amp-animation>
+<div id="page-top" style="height:1px;">
 <amp-position-observer intersection-ratios="0" on="enter:hideScrollTopAnim.start;exit:showScrollTopAnim.start" layout="nodisplay"></amp-position-observer>
+</div>
 <a class="visually-hidden" href="#content">Skip to content</a>
 
 <header class="site-header">
