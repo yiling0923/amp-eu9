@@ -5,6 +5,8 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 <title>Blog | EU9</title>
 <link rel="canonical" href="https://eu9.asia/blog/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -138,10 +140,11 @@ footer .container{max-width:1629px;}
 
 /* scroll to top */
 #ast-scroll-top{display:none;position:fixed;text-align:center;cursor:pointer;z-index:99;width:2.1em;height:2.1em;line-height:2.1;color:#ffffff;border-radius:2px;content:"";outline:inherit;}
+#ast-scroll-top.ast-scroll-top-visible{display:block;}
 .ast-scroll-top-icon{transition:.3s;background-color:rgba(0,0,0,.3)!important;transform:scale(1);border-radius:50%!important;font-size:18px!important;}
 .ast-scroll-top-icon:hover{background-color:var(--red-dark)!important;transform:scale(1.2);}
 .ast-scroll-to-top-right{right:30px;bottom:30px;}
-#ast-scroll-top .ast-icon.icon-arrow svg{margin-left:0px;vertical-align:middle;transform:translate(0,-20%) rotate(180deg);width:1.6em;}
+#ast-scroll-top .ast-icon.icon-arrow svg{margin-left:0px;vertical-align:middle;transform:translate(0,-5%) rotate(180deg);width:1.0em;}
 .ast-icon svg:not([fill]){fill:currentColor;}
 .screen-reader-text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 </style>
@@ -149,6 +152,7 @@ footer .container{max-width:1629px;}
 </head>
 <body>
 <div id="page-top"></div>
+<amp-position-observer intersection-ratios="0" on="enter:AMP.setState({showScrollTop:false});exit:AMP.setState({showScrollTop:true})" layout="nodisplay"></amp-position-observer>
 <a class="visually-hidden" href="#content">Skip to content</a>
 
 <header class="site-header">
@@ -403,7 +407,7 @@ footer .container{max-width:1629px;}
   </div>
 </footer>
 
-<div id="ast-scroll-top" tabindex="0" role="button" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" style="display: block;" on="tap:page-top.scrollTo(duration=500, position=top)"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve"><path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path></svg></span><span class="screen-reader-text">Scroll to Top</span></div>
+<div id="ast-scroll-top" tabindex="0" role="button" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" on="tap:page-top.scrollTo(duration=500, position=top)" [class]="showScrollTop ? 'ast-scroll-top-icon ast-scroll-to-top-right ast-scroll-top-visible' : 'ast-scroll-top-icon ast-scroll-to-top-right'"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve"><path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path></svg></span><span class="screen-reader-text">Scroll to Top</span></div>
 
 </body>
 </html>
