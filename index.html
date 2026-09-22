@@ -308,11 +308,11 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .telegram-features-section .features-grid{width:100%;margin-top:0;}
 @media (max-width:600px){.telegram-features-section .features-grid{margin-top:30px;}}
 @media (min-width:768px){.telegram-features-section .features-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);grid-auto-flow:row;gap:50px 26px;row-gap:50px;column-gap:0px;justify-items:center;align-items:center;margin:0;padding:0;}}
-.telegram-features-section .feature-card{position:relative;height:100%;min-height:100%;width:88%;background-color:#F3F5F6;margin:0;padding:0;border-style:solid;border-width:2px;border-color:#FF0031;border-radius:10px;display:block;}
+.telegram-features-section .feature-card{position:relative;width:88%;background-color:#F3F5F6;margin:0;padding:0;border-style:solid;border-width:2px;border-color:#FF0031;border-radius:10px;display:flex;align-items:flex-start;}
 @media (max-width:600px){.telegram-features-section .feature-card{width:80%;}}
-.telegram-features-section .feature-card>div:last-child{padding:10px 8px 10px 120px;}
+.telegram-features-section .feature-card>div:last-child{padding:10px 8px 10px 120px;flex:1;padding-left:0;}
 @media (max-width:600px){.telegram-features-section .feature-card>div:last-child{padding:10px 8px 10px 60px;}}
-.telegram-features-section .feature-icon-badge{position:absolute;top:-30%;left:-37px;transform:translate(0px,100%);width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;}
+.telegram-features-section .feature-icon-badge{position:relative;transform:translate(-50%,30px);width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;}
 @media (max-width:600px){.telegram-features-section .feature-icon-badge{position:static;width:auto;height:auto;background:none;border-radius:0;display:block;}.telegram-features-section .feature-icon-badge amp-img{position:absolute;display:block;top:60px;left:-33px;transform:scale(.7222);transform-origin:top left;}}
 @media (max-width:600px){.telegram-features-section .feature-card:nth-child(2) .feature-icon-badge amp-img,.telegram-features-section .feature-card:nth-child(4) .feature-icon-badge amp-img{top:50px;}}
 .telegram-features-section .feature-card h3{color:#FF0031;font-size:24px;line-height:1.6;font-weight:600;}
@@ -339,7 +339,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 @media (max-width:600px){.qr-img-wrap{width:170px;height:170px;}}
 .trust-right{padding-top:50px;}
 @media (max-width:600px){.trust-right{padding-top:10px;}}
-.trust-left .apps-row{margin:0;gap:90px;}
+.trust-left .apps-row{margin:0;gap:84px;}
 @media (max-width:600px){.trust-left .apps-row{margin:0;gap:0;}}
 .trust-left .apps-col{max-width:480px;}
 .trust-left .btn{width:calc(100% + 70px);margin-left:-94px;margin-right:-94px;padding:10px 59px;background-color:#FF0031;border-radius:105px;font-family:"Roboto",sans-serif;font-size:16px;font-weight:600;text-align:center;}
@@ -379,7 +379,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .watch-front{position:relative;z-index:1;}
 .watch-front amp-img{display:block;}
 .watch-card:hover .watch-front{opacity:0;}
-.watch-back{position:absolute;inset:0;z-index:2;opacity:0;}
+.watch-back{position:absolute;inset:0;z-index:2;opacity:0;transition:all 0.5s ease;}
 .watch-card:hover .watch-back{opacity:1;}
 .watch-back amp-img{display:block;}
 .watch-overlay{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;}
@@ -407,7 +407,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* faq / amp-accordion */
 .faq-section{background:none;}
-.faq-section .container{max-width:1570px;}
+.faq-section .container{width:100%;max-width:100%;padding-left:190px;padding-right:190px;padding-top:20px;}
 @media (max-width:600px){.faq-section .container{padding:0 30px;}}
 .faq-section h2{font-size:32px;line-height:41.6px;font-weight:600;text-align:left;}
 amp-accordion section{border-style:solid;border-width:2px;border-color:#D5D8DC;border-radius:0.625rem;padding:0;margin-bottom:10px;}
