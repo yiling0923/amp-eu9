@@ -92,7 +92,7 @@ amp-sidebar#sidebar1{width:315px;background:#fff;}
 .close-sidebar{display:flex;opacity:0;visibility:hidden;pointer-events:none;position:fixed;top:30px;left:calc(100vw - 330px);width:29px;height:29px;border-radius:50%;background:var(--red);color:#fff;border:0;font-size:35px;line-height:1;align-items:center;justify-content:center;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:2147483647;transition:none;}
 amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .1s ease .08s,visibility 0s linear .08s;}
 .sidebar-nav .country-accordion{width:100%;}
-.sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;}
+.sidebar-nav .country-accordion section{border:none;border-radius:0;padding:0;margin:0;min-height:0;}
 .sidebar-nav amp-accordion h4.country-toggle{padding:13px 13px;font-size:18px;line-height:1;font-weight:700;color:#000;cursor:pointer;position:relative;background:none;border:none;margin:0;}
 .sidebar-nav amp-accordion h4.country-toggle::before{content:none;}
 .sidebar-nav .country-toggle::after{content:"";display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid var(--ink-2);position:absolute;right:40px;top:50%;transform:translateY(-50%);}
