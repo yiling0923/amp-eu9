@@ -72,15 +72,16 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 
 /* post */
 .post-section{padding:50px 0 70px;}
-.post-container{max-width:800px;margin:0 auto;padding:0 20px;}
-.post-category-badge{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:6px 14px;border-radius:4px;margin-bottom:16px;}
-.post-title{font-size:36px;line-height:1.25;margin-bottom:14px;}
-.post-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;color:#646464;font-weight:300;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid #e5e5e5;}
-.post-meta span{display:inline-flex;align-items:center;gap:5px;}
-.post-meta i{font-size:13px;flex:0 0 auto;}
-.post-content p{font-size:16px;line-height:1.7;color:#212529;margin:0 0 1.2em;}
-.post-content h2{font-size:26px;line-height:1.3;margin:1.6em 0 .6em;color:#212529;}
+.post-container{max-width:100%;margin:0 auto;padding:0 200px;}
+@media (max-width:600px){.post-container{padding:0 20px;}}
+.post-category-badge{display:inline-block;background-color:transparent;color:#e20707;border:2px solid #e20707;font-size:inherit;font-weight:700;padding:4px 8px;border-radius:3px;margin-bottom:16px;transition:all .31s ease;}
+.post-category-badge:hover{background-color:#e20707;color:#fff;}
+.post-title{font-size:32px;line-height:38.4px;font-weight:600;color:#212529;margin-bottom:14px;}
+.post-meta{font-weight:600;font-size:.8125rem;color:rgba(63,63,63,.73);margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid #e5e5e5;}
+.post-content p{font-size:16px;line-height:24px;color:#212529;margin:0 0 1.2em;}
+.post-content h2{font-size:30px;line-height:39px;font-weight:900;margin:1.6em 0 .6em;color:#1e293b;}
 .post-content h2:first-child{margin-top:0;}
+.post-content .post-subheading{font-size:30px;line-height:39px;font-weight:600;margin:1.6em 0 .6em;color:#1e293b;}
 .post-content a{color:var(--red);text-decoration:underline;}
 .post-content a:hover{color:var(--red-dark);}
 .back-to-blog{display:inline-flex;align-items:center;gap:8px;margin-top:40px;font-weight:600;color:var(--red);}
@@ -166,12 +167,9 @@ footer .container{max-width:1629px;}
   <article class="post-section">
     <div class="post-container">
 
-      <span class="post-category-badge">Casino Review</span>
+      <a class="post-category-badge" href="https://eu9.asia/category/casino-review/">Casino Review</a>
       <h1 class="post-title">Why Do Players Like to Play Online Casino Games in Telegram?</h1>
-      <div class="post-meta">
-        <span><i class="far fa-calendar-alt"></i>April 12, 2024</span>
-        <span><i class="far fa-user"></i>eu9_seo</span>
-      </div>
+      <div class="post-meta">By eu9_seo | April 12, 2024</div>
 
       <div class="post-content">
         <p>Telegram, a popular messaging platform, has become a hub for various activities beyond just communication. One such activity gaining traction is playing online casino games. Players are drawn to Telegram for several reasons, ranging from convenience and accessibility to social interaction and anonymity.</p>
@@ -194,7 +192,7 @@ footer .container{max-width:1629px;}
         <h2>6. Quick and Easy Transactions</h2>
         <p>Telegram channels offering casino games often facilitate quick and easy transactions for players. Whether depositing funds to play or cashing out winnings, players appreciate the simplicity and efficiency of the transaction process. With just a few clicks, players can top up their accounts or withdraw their winnings without any hassle or delays.</p>
 
-        <h2>The 1st Telegram Casino in Malaysia &#8211; EU9</h2>
+        <h3 class="post-subheading">The 1st Telegram Casino in Malaysia &#8211; EU9</h3>
         <p><a href="https://live.eu9.asia/">EU9</a> stands out as the first Telegram casino in Malaysia, offering players a unique and exciting gaming experience. With a wide range of casino games, including slots, roulette, and card games, EU9 provides Malaysian players with unparalleled entertainment right at their fingertips. The platform's seamless integration with Telegram ensures hassle-free access to games, while its commitment to privacy and security ensures a safe and enjoyable gaming environment for all players.</p>
 
         <h2>Conclusion</h2>
