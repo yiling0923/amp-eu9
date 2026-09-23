@@ -261,10 +261,11 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 }
 @media (min-width:601px) and (max-width:899px){
   .games-section{height:auto;background-size:70% auto;}
-  .games-section-grid{gap:40px;padding:40px 0;}
-  .games-text{text-align:center;}
+  .games-section-grid{flex-direction:row;align-items:center;gap:50px 50px;row-gap:50px;column-gap:50px;padding:40px 0;}
+  .games-text{width:auto;text-align:left;}
   .games-text h1,.games-text h2{margin-bottom:0;}
-  .phone-demo{max-width:520px;margin:0 auto;}
+  .games-visual{flex:0 0 300px;width:auto;justify-content:flex-end;}
+  .phone-demo{max-width:300px;}
 }
 .phone-demo{position:relative;width:100%;max-width:910px;aspect-ratio:964/906;}
 .phone-demo .demo-layer{position:absolute;top:0;left:0;width:100%;height:100%;}
