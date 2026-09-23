@@ -237,7 +237,7 @@ amp-sidebar#sidebar1[open]~.close-sidebar{opacity:1;visibility:visible;pointer-e
 .games-text h1{font-size:40px;font-weight:600;line-height:1.4;margin-bottom:0px;}
 .games-text h2{font-size:32px;font-weight:600;line-height:1.3;}
 @media (max-width:600px){.games-text h1,.games-text h2{color:#000;margin-bottom:0;}}
-.games-list{display:flex;flex-direction:column;gap:26px;margin-top:24px;}
+.games-list{display:grid;grid-template-columns:repeat(2,1fr);gap:50px 50px;row-gap:50px;column-gap:50px;margin-top:24px;}
 .game-card{display:flex;align-items:flex-start;gap:25px;}
 @media (max-width:600px){.game-card{gap:10px;}}
 .game-icon{position:relative;flex:0 0 auto;width:54px;margin-top:10px;height:42px;}
