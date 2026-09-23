@@ -510,12 +510,15 @@ footer .container{max-width:1629px;}
   .trust-left .apps-row{gap:10px;}
   .trust-section .container{max-width:97%;}
   .trust-right .gallery-cell{min-width:65px;min-height:45px;}
-  .trust-right .gallery-grid{flex-wrap:wrap;justify-content:center;}
-  .trust-right .gallery-cell{flex-basis:calc((100% - 28px)/5);}
+  .trust-right .gallery-grid{display:grid;grid-template-columns:repeat(10,1fr);}
+  .trust-right .gallery-cell{grid-column:span 2;}
+  .trust-right .gallery-cell:nth-last-child(4){grid-column-start:2;}
   .trust-section .container{margin-top:60px;}
   .hologram-frame amp-img{margin-left:-190px;width:150%;}
   .hologram-section{background-position:bottom 14% right;background-size:100% auto;}
   .hologram-frame{padding-top:39.87%;}
+  .trust-grid{gap:15px;}
+  .trust-left .btn{padding:10px 27px 10px 30px;width:calc(100% + -5px);}
 }
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
